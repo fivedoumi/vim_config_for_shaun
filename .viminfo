@@ -17,8 +17,8 @@
 $
 
 # Command Line History (newest to oldest):
-:wqa
 :qa
+:wqa
 :wa
 :q!
 :e
@@ -162,18 +162,20 @@ $
 	/
 
 # File marks:
-'0  3  0  ~/.gitignore
-'1  4  1  ~/.gitignore
-'2  6  14  ~/.gitignore
-'3  4  0  ~/.spf13-vim-3/NERD_tree_2
-'4  122  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-'5  4667  0  ~/.zsh_history
-'6  62  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
-'7  77  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
-'8  62  0  ~/.zshrc
-'9  1002  37  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+'0  8  0  ~/.git/config
+'1  3  0  ~/.gitignore
+'2  4  1  ~/.gitignore
+'3  6  14  ~/.gitignore
+'4  4  0  ~/.spf13-vim-3/NERD_tree_2
+'5  122  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+'6  4667  0  ~/.zsh_history
+'7  62  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
+'8  77  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
+'9  62  0  ~/.zshrc
 
 # Jumplist (newest first):
+-'  8  0  ~/.git/config
+-'  1  0  ~/.git/config
 -'  3  0  ~/.gitignore
 -'  4  1  ~/.gitignore
 -'  6  14  ~/.gitignore
@@ -274,6 +276,19 @@ $
 -'  5  14  ~/.gitignore
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/config
+	"	8	0
+
+> ~/.git/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.git/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
 
 > ~/.gitignore
 	"	3	0
@@ -2330,22 +2345,3 @@ $
 	.	1	0
 	+	1	0
 	+	1	0
-
-> /etc/rsyslog.d/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-
-> /var/log/messages.1
-	"	4079	71
-	^	1	2
-	.	1	2
-	+	1	2
-
-> ~/WORKSPACE/DRAMErrorInjector/test.txt
-	"	9	0
-	^	9	0
-	.	8	0
-	+	3	0
-	+	8	0
