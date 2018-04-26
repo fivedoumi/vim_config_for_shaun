@@ -1,5 +1,6 @@
 # Most recently edited files in Vim (version 3.0)
 /home/higon/.gitignore
+/home/higon/.spf13-vim-3/.gitignore
 /home/higon/WORKSPACE/DRAMErrorInjector/EccErrInj.c
 /home/higon/WORKSPACE/DRAMErrorInjector/DhyanaSocConf.h
 /home/higon/.zsh_history
@@ -98,4 +99,3 @@
 /home/higon/.vnc/bogon:1.log
 /home/higon/.vnc/bogon:2.log
 /home/higon/Downloads/monaco-font-master/README.md
-/etc/fonts/conf.avail/64-language-selector-prefer.conf
