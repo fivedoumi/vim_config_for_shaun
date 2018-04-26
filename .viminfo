@@ -8,23 +8,38 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\<TEST_SCOPE_PATTERN_LIST\>
+~MSle0/\<TEST_SCOPE_PATTERN_LIST\>
 
 # Last Substitute Search Pattern:
-~MSle0&-10
+~MSle0~&\t
 
 # Last Substitute String:
-$
+$    
 
 # Command Line History (newest to oldest):
 :qa
-:wqa
 :wa
+:hi ColorColumn ctermbg=11
+:highlight ColorColumn ctermbg=11
+:highlight ColorColumn ctermbg=10
+:q
+:help ctermbg
+:highlight ColorColumn ctermbg=2
+:highlight ColorColumn ctermfg=2
+:help highlight-ctermbg
+:highlight ColorColumn ctermfg=8
+:highlight ColorColumn ctermbg=7
+:colorscheme solarized
+:colorscheme industry
+:colorscheme adobe
+:hi ColorColumn guifg=@11f0c3 guibg=#ff00ff
+:hi ColorColumn guifg=@11f0c3
+:set colorcolumn=81
+:wqa
 :q!
 :e
 :highlight ColorColumn guifg=#11f0c3 guibg=#ff00ff
 :highlight ColorColumn guifg=#11f0c3 guibd=#ff00ff
-:set colorcolumn=81
 :cs f t VERSION
 :cs f f VERSION
 :Dox
@@ -52,23 +67,11 @@ $
 :cs f t "Normalized Address"
 :cs f t V0.30
 :cs f t version
-:qall
-:q
-:Tagbar
-:b12
-:colorscheme solarized
-:colorscheme
-:a
-:bn
-:b19
-:b2
-:colorscheme industry
-:set nospell
-:%s/Cpu/Core/g
-:%s/cpu/core/g
-:%s/cpuid/coreid/g
 
 # Search String History (newest to oldest):
+?/colorschem
+? \t
+?/colorcolumn
 ? \s\+$
 ? \<TEST_SCOPE_PATTERN_LIST\>
 ?/-----
@@ -116,9 +119,6 @@ $
 ? \<GetUmcerrinjres\>
 ? \<GetUmcerrinjresp\>
 ? errinjres
-? \<injctrl\>
-?/failed
-?/version
 
 # Expression History (newest to oldest):
 
@@ -127,58 +127,66 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	~/*
-"1	LINE	0
-	~/*
+"0	LINE	0
+	/* !/.vim/ !.vim* !/.spf13-vim-3/
+""1	LINE	0
+	#/* !/.vim/ !.vim* !/.spf13-vim-3/
 "2	LINE	0
-	    injinfo.injbeat[0] = injbeat[0];
-	    injinfo.injbeat[1] = injbeat[1];
-	    injinfo.injbeat[2] = injbeat[2];
-	    injinfo.injbeat[3] = injbeat[3];
+	!.vim* 
 "3	LINE	0
-	    injinfo.injbeat[0] = injbeat[0];
-	    injinfo.injbeat[1] = injbeat[1];
-	    injinfo.injbeat[2] = injbeat[2];
-	    injinfo.injbeat[3] = injbeat[3];
+	
 "4	LINE	0
-	    injinfo.injbeat[0] = injbeat[0];
-	    injinfo.injbeat[1] = injbeat[1];
-	    injinfo.injbeat[2] = injbeat[2];
-	    injinfo.injbeat[3] = injbeat[3];
+	!/.vim
+	!/.vim/bundle/*
+	!/.spf13-vim-3
+	!.vim*
 "5	LINE	0
-	: 1524708157:0;vim ~/.zsh_history
+	#*
 "6	LINE	0
-	nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn: 1524708131:0;vncserver
+	#./*
 "7	LINE	0
-	
+	#~/*
 "8	LINE	0
-	
+	#!~/.vim/*
 "9	LINE	0
-	
+	~/*
 "a	CHAR	0
 	€kraad€kba€kb€kb€kbANK_BITakj:wakjkj\\briint kjj:wa
+"j	CHAR	0
+	hh
 "-	CHAR	0
-	/
+	#
 
 # File marks:
-'0  8  0  ~/.git/config
-'1  3  0  ~/.gitignore
-'2  4  1  ~/.gitignore
-'3  6  14  ~/.gitignore
-'4  4  0  ~/.spf13-vim-3/NERD_tree_2
-'5  122  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-'6  4667  0  ~/.zsh_history
-'7  62  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
-'8  77  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
-'9  62  0  ~/.zshrc
+'Z  6  0  ~/.gitignore
+'0  373  8  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+'1  1  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+'2  80  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+'3  217  2  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+'4  205  2  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+'5  9  10  ~/.gitignore
+'6  18  7  ~/.gitignore
+'7  19  0  ~/.gitignore
+'8  19  1  ~/.gitignore
+'9  19  14  ~/.gitignore
 
 # Jumplist (newest first):
--'  8  0  ~/.git/config
--'  1  0  ~/.git/config
--'  3  0  ~/.gitignore
--'  4  1  ~/.gitignore
--'  6  14  ~/.gitignore
+-'  373  8  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  362  6  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  1  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  110  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  80  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  217  2  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  205  2  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  196  19  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  9  10  ~/.gitignore
+-'  197  39  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  160  6  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  18  7  ~/.gitignore
+-'  4  0  ~/.gitignore
+-'  10  0  ~/.gitignore
+-'  19  6  ~/.gitignore
+-'  1  0  ~/.gitignore
 -'  4  0  ~/.spf13-vim-3/NERD_tree_2
 -'  18  2  ~/.spf13-vim-3/NERD_tree_2
 -'  1  0  ~/.spf13-vim-3/NERD_tree_2
@@ -249,7 +257,6 @@ $
 -'  312  16  ~/WORKSPACE/DataReorganizer/DataReorganize.py
 -'  23  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
 -'  35  45  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  1  1  ~/.gitignore
 -'  4667  0  ~/.zsh_history
 -'  1  0  ~/.zsh_history
 -'  316  0  ~/.zsh_history
@@ -258,396 +265,119 @@ $
 -'  1  0  ~/.zsh_history
 -'  316  0  ~/.zsh_history
 -'  315  0  ~/.zsh_history
--'  50  0  ~/WORKSPACE/DRAMErrorInjector/DhyanaSocConf.h
--'  4667  0  ~/.zsh_history
--'  1  0  ~/.zsh_history
--'  316  0  ~/.zsh_history
--'  315  0  ~/.zsh_history
--'  62  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  61  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  831  91  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  814  33  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  801  32  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  798  42  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  547  28  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  543  12  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  4  0  ~/.spf13-vim-3/NERD_tree_2
--'  18  2  ~/.spf13-vim-3/NERD_tree_2
--'  5  14  ~/.gitignore
+-'  214  71  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  178  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  8  0  ~/.git/config
+-'  1  0  ~/.git/config
+-'  3  0  ~/.gitignore
+-'  186  44  ~/.vimrc
 
 # History of marks within files (newest to oldest):
 
-> ~/.git/config
-	"	8	0
-
-> ~/.git/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/.git/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-
-> ~/.gitignore
-	"	3	0
-	^	6	15
-	.	3	0
-	+	4	6
-	+	6	12
-	+	5	3
-	+	6	2
-	+	5	1
-	+	6	1
-	+	5	1
-	+	6	1
-	+	5	1
-	+	1	0
-	+	1	11
-	+	1	2
-	+	1	12
-	+	5	6
-	+	6	14
-	+	1	0
-	+	2	0
-	+	5	0
-	+	5	0
-	+	4	1
-	+	5	1
-	+	6	1
-	+	3	0
-
-> ~/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/.spf13-vim-3/.gitignore
-	"	4	0
-	^	4	0
-	.	4	0
-	+	4	0
-
-> ~/.spf13-vim-3/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/.spf13-vim-3/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-
-> ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-	"	122	0
-	^	139	0
-	.	61	0
-	+	700	8
-	+	700	53
-	+	700	0
-	+	700	71
-	+	701	0
-	+	901	47
-	+	702	0
-	+	701	27
-	+	700	0
-	+	708	0
-	+	705	0
-	+	718	0
-	+	717	70
-	+	722	0
-	+	721	0
-	+	720	70
-	+	689	2
-	+	690	9
-	+	691	1
-	+	692	14
-	+	693	14
-	+	694	16
-	+	695	19
-	+	696	36
-	+	697	1
-	+	698	10
-	+	699	2
-	+	690	46
-	+	692	17
-	+	693	17
-	+	694	19
-	+	695	22
-	+	696	19
-	+	692	28
-	+	693	28
-	+	694	42
-	+	698	0
-	+	692	0
-	+	915	10
-	+	927	56
-	+	1026	5
-	+	884	78
-	+	885	75
-	+	886	75
-	+	887	75
-	+	884	96
-	+	885	93
-	+	886	93
-	+	887	93
-	+	885	76
-	+	886	76
-	+	887	80
-	+	886	80
-	+	885	80
-	+	884	68
-	+	882	67
-	+	890	64
-	+	882	64
-	+	884	69
-	+	885	76
-	+	886	80
-	+	887	84
-	+	882	15
-	+	884	13
-	+	885	0
-	+	890	15
-	+	882	17
-	+	884	15
-	+	885	0
-	+	884	35
-	+	885	32
-	+	886	0
-	+	885	33
-	+	886	33
-	+	887	33
-	+	885	70
-	+	886	0
-	+	885	71
-	+	886	71
-	+	887	71
-	+	884	63
-	+	885	72
-	+	886	0
-	+	882	68
-	+	890	67
-	+	885	33
-	+	886	33
-	+	887	33
-	+	1002	0
-	+	61	0
-	+	61	15
-	+	63	51
-	+	61	12
-	+	65	0
-	+	100	0
-	+	104	0
-	+	140	0
-	+	139	0
-	+	144	0
-	+	61	0
-	d	690	1
+> ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+	"	373	8
+	^	428	57
+	.	424	24
+	+	379	0
+	+	396	0
+	+	410	0
+	+	398	12
+	+	380	16
+	+	398	14
+	+	488	62
+	+	489	58
+	+	568	0
+	+	507	0
+	+	506	0
+	+	412	0
+	+	427	0
+	+	418	0
+	+	427	24
+	+	430	0
+	+	424	4
+	+	425	20
+	+	463	0
+	+	424	0
+	+	418	0
+	+	426	4
+	+	418	0
+	+	660	16
+	+	660	106
+	+	660	0
+	+	661	87
+	+	487	7
+	+	508	0
+	+	508	0
+	+	510	86
+	+	511	0
+	+	513	86
+	+	514	0
+	+	511	0
+	+	508	0
+	+	514	0
+	+	515	85
+	+	487	95
+	+	468	4
+	+	467	4
+	+	466	0
+	+	468	38
+	+	488	46
+	+	489	40
+	+	489	47
+	+	489	77
+	+	489	24
+	+	489	31
+	+	489	61
+	+	468	39
+	+	488	49
+	+	515	0
+	+	468	51
+	+	467	61
+	+	487	63
+	+	488	51
+	+	468	42
+	+	488	54
+	+	467	61
+	+	487	71
+	+	467	68
+	+	468	16
+	+	488	22
+	+	491	0
+	+	488	37
+	+	661	94
+	+	660	24
+	+	661	37
+	+	660	106
+	+	661	116
+	+	660	0
+	+	658	0
+	+	671	13
+	+	661	115
+	+	488	33
+	+	473	14
+	+	477	8
+	+	478	0
+	+	478	48
+	+	485	0
+	+	480	34
+	+	481	13
+	+	483	21
+	+	482	25
+	+	489	57
+	+	478	16
+	+	488	34
+	+	489	59
+	+	488	34
+	+	478	59
+	+	489	32
+	+	22	26
+	+	488	46
+	+	421	42
+	+	397	0
+	+	399	0
+	+	429	0
+	+	428	56
+	+	424	24
 
 > ~/WORKSPACE/DRAMErrorInjector/NERD_tree_2
 	"	4	0
@@ -754,108 +484,108 @@ $
 	+	1	0
 
 > ~/WORKSPACE/DRAMErrorInjector/__Tag_List__
-	"	9	4
-	.	16	0
-	+	382	0
-	+	381	0
-	+	364	0
-	+	363	0
+	"	15	4
+	.	19	0
+	+	459	0
+	+	458	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	441	0
+	+	440	0
+	+	423	0
+	+	423	0
+	+	423	0
+	+	423	0
+	+	423	0
+	+	423	0
+	+	423	0
+	+	423	0
+	+	423	0
+	+	422	0
+	+	413	0
+	+	399	0
+	+	385	0
+	+	367	0
+	+	350	0
+	+	350	0
+	+	350	0
+	+	350	0
+	+	350	0
+	+	350	0
 	+	350	0
 	+	349	0
-	+	336	0
-	+	336	0
-	+	336	0
-	+	335	0
-	+	318	0
-	+	318	0
-	+	318	0
-	+	318	0
-	+	318	0
-	+	318	0
-	+	318	0
-	+	318	0
-	+	318	0
-	+	318	0
-	+	318	0
-	+	318	0
+	+	331	0
 	+	318	0
 	+	318	0
 	+	318	0
 	+	317	0
-	+	300	0
-	+	300	0
-	+	300	0
-	+	300	0
-	+	300	0
-	+	300	0
-	+	300	0
-	+	300	0
-	+	300	0
-	+	299	0
-	+	290	0
-	+	276	0
+	+	304	0
+	+	304	0
+	+	304	0
+	+	304	0
+	+	304	0
+	+	303	0
+	+	296	0
+	+	296	0
+	+	296	0
+	+	296	0
+	+	296	0
+	+	296	0
+	+	296	0
+	+	296	0
+	+	296	0
+	+	295	0
+	+	277	0
+	+	263	0
+	+	263	0
+	+	263	0
+	+	263	0
+	+	263	0
+	+	263	0
+	+	263	0
+	+	263	0
+	+	263	0
 	+	262	0
-	+	244	0
-	+	227	0
-	+	227	0
-	+	227	0
-	+	227	0
-	+	227	0
-	+	227	0
-	+	227	0
-	+	226	0
-	+	208	0
-	+	195	0
-	+	195	0
-	+	195	0
-	+	194	0
-	+	181	0
-	+	181	0
-	+	181	0
-	+	181	0
-	+	181	0
-	+	180	0
-	+	173	0
-	+	173	0
-	+	173	0
-	+	173	0
-	+	173	0
-	+	173	0
-	+	173	0
-	+	173	0
-	+	173	0
-	+	172	0
+	+	247	0
+	+	233	0
+	+	232	0
+	+	217	0
+	+	203	0
+	+	203	0
+	+	202	0
+	+	197	0
+	+	197	0
+	+	196	0
+	+	191	0
+	+	190	0
+	+	185	0
+	+	185	0
+	+	184	0
+	+	169	0
 	+	154	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
-	+	140	0
 	+	140	0
 	+	140	0
 	+	139	0
 	+	124	0
-	+	110	0
 	+	109	0
 	+	94	0
-	+	80	0
-	+	80	0
 	+	79	0
-	+	74	0
-	+	74	0
-	+	73	0
-	+	68	0
-	+	67	0
-	+	62	0
-	+	62	0
-	+	61	0
-	+	46	0
-	+	31	0
-	+	17	0
-	+	17	0
-	+	16	0
+	+	64	0
+	+	49	0
+	+	34	0
+	+	19	0
 
 > ~/WORKSPACE/DRAMErrorInjector/-MiniBufExplorer-
 	"	1	0
@@ -961,6 +691,486 @@ $
 	+	2	0
 	+	2	0
 
+> ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+	"	139	0
+	^	139	0
+	.	160	0
+	+	700	53
+	+	700	0
+	+	700	71
+	+	701	0
+	+	901	47
+	+	702	0
+	+	701	27
+	+	700	0
+	+	708	0
+	+	705	0
+	+	718	0
+	+	717	70
+	+	722	0
+	+	721	0
+	+	720	70
+	+	689	2
+	+	690	9
+	+	691	1
+	+	692	14
+	+	693	14
+	+	694	16
+	+	695	19
+	+	696	36
+	+	697	1
+	+	698	10
+	+	699	2
+	+	690	46
+	+	692	17
+	+	693	17
+	+	694	19
+	+	695	22
+	+	696	19
+	+	692	28
+	+	693	28
+	+	694	42
+	+	698	0
+	+	692	0
+	+	915	10
+	+	927	56
+	+	1026	5
+	+	884	78
+	+	885	75
+	+	886	75
+	+	887	75
+	+	884	96
+	+	885	93
+	+	886	93
+	+	887	93
+	+	885	76
+	+	886	76
+	+	887	80
+	+	886	80
+	+	885	80
+	+	884	68
+	+	882	67
+	+	890	64
+	+	882	64
+	+	884	69
+	+	885	76
+	+	886	80
+	+	887	84
+	+	882	15
+	+	884	13
+	+	885	0
+	+	890	15
+	+	882	17
+	+	884	15
+	+	885	0
+	+	884	35
+	+	885	32
+	+	886	0
+	+	885	33
+	+	886	33
+	+	887	33
+	+	885	70
+	+	886	0
+	+	885	71
+	+	886	71
+	+	887	71
+	+	884	63
+	+	885	72
+	+	886	0
+	+	882	68
+	+	890	67
+	+	885	33
+	+	886	33
+	+	887	33
+	+	1002	0
+	+	61	0
+	+	61	15
+	+	63	51
+	+	61	12
+	+	65	0
+	+	100	0
+	+	104	0
+	+	140	0
+	+	139	0
+	+	144	0
+	+	61	0
+	+	160	0
+	d	690	1
+
+> ~/.vimrc
+	"	186	44
+	^	186	22
+	.	185	0
+	+	1058	0
+	+	1059	0
+	+	1058	47
+	+	192	0
+	+	185	0
+	+	185	0
+	+	185	0
+	+	186	21
+	+	185	0
+
+> ~/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/__Tag_List__
+	"	87	4
+	.	134	0
+	+	455	0
+	+	452	0
+	+	449	0
+	+	446	0
+	+	443	0
+	+	440	0
+	+	437	0
+	+	434	0
+	+	431	0
+	+	428	0
+	+	425	0
+	+	422	0
+	+	290	0
+	+	288	0
+	+	288	0
+	+	287	0
+	+	228	0
+	+	225	0
+	+	222	0
+	+	219	0
+	+	216	0
+	+	211	0
+	+	206	0
+	+	203	0
+	+	200	0
+	+	197	0
+	+	194	0
+	+	134	0
+
+> ~/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> /usr/share/vim/vim74/doc/syntax.txt
+	"	4702	23
+
+> ~/.gitignore
+	"	9	10
+	^	6	0
+	.	8	0
+	+	19	6
+	+	19	12
+	+	19	3
+	+	19	2
+	+	19	1
+	+	19	1
+	+	19	1
+	+	19	1
+	+	19	1
+	+	1	0
+	+	1	11
+	+	1	2
+	+	1	12
+	+	19	6
+	+	19	14
+	+	1	0
+	+	19	0
+	+	19	0
+	+	19	0
+	+	19	1
+	+	19	1
+	+	19	1
+	+	19	0
+	+	1	10
+	+	19	0
+	+	19	0
+	+	19	0
+	+	1	0
+	+	19	0
+	+	19	0
+	+	19	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	1
+	+	19	7
+	+	19	0
+	+	19	0
+	+	1	0
+	+	19	7
+	+	1	0
+	+	19	1
+	+	1	1
+	+	19	6
+	+	19	14
+	+	19	5
+	+	13	1
+	+	16	1
+	+	14	1
+	+	15	0
+	+	17	0
+	+	11	0
+	+	1	19
+	+	2	0
+	+	3	6
+	+	12	6
+	+	18	6
+	+	19	0
+	+	4	2
+	+	10	0
+	+	9	0
+	+	9	0
+	+	4	9
+	+	9	1
+	+	10	0
+	+	4	11
+	+	10	0
+	+	4	32
+	+	10	0
+	+	8	0
+	+	8	0
+	+	4	3
+	+	5	7
+	+	6	0
+	+	7	0
+	+	8	0
+
+> ~/.vimrc.local
+	"	16	0
+	.	16	0
+	+	634	0
+	+	16	0
+
+> ~/.git/config
+	"	8	0
+
+> ~/.git/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.git/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/.spf13-vim-3/.gitignore
+	"	4	0
+	^	4	0
+	.	4	0
+	+	4	0
+
+> ~/.spf13-vim-3/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.spf13-vim-3/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+
 > ~/WORKSPACE/DRAMErrorInjector/DhyanaSocConf.h
 	"	50	0
 	^	55	20
@@ -973,36 +1183,6 @@ $
 	"	4667	0
 	.	4668	0
 	+	4668	0
-
-> ~/__Tag_List__
-	"	3	0
-	.	4	0
-	+	262	0
-	+	259	0
-	+	256	0
-	+	253	0
-	+	250	0
-	+	247	0
-	+	244	0
-	+	241	0
-	+	238	0
-	+	235	0
-	+	232	0
-	+	229	0
-	+	97	0
-	+	95	0
-	+	95	0
-	+	94	0
-	+	35	0
-	+	32	0
-	+	29	0
-	+	26	0
-	+	23	0
-	+	18	0
-	+	13	0
-	+	10	0
-	+	7	0
-	+	4	0
 
 > ~/WORKSPACE/DataReorganizer/DataReorganize.py
 	"	62	0
@@ -1210,111 +1390,6 @@ $
 	+	64	6
 	+	119	0
 	+	102	0
-
-> ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
-	"	362	6
-	^	428	57
-	.	424	24
-	+	379	0
-	+	396	0
-	+	410	0
-	+	398	12
-	+	380	16
-	+	398	14
-	+	488	62
-	+	489	58
-	+	568	0
-	+	507	0
-	+	506	0
-	+	412	0
-	+	427	0
-	+	418	0
-	+	427	24
-	+	430	0
-	+	424	4
-	+	425	20
-	+	463	0
-	+	424	0
-	+	418	0
-	+	426	4
-	+	418	0
-	+	660	16
-	+	660	106
-	+	660	0
-	+	661	87
-	+	487	7
-	+	508	0
-	+	508	0
-	+	510	86
-	+	511	0
-	+	513	86
-	+	514	0
-	+	511	0
-	+	508	0
-	+	514	0
-	+	515	85
-	+	487	95
-	+	468	4
-	+	467	4
-	+	466	0
-	+	468	38
-	+	488	46
-	+	489	40
-	+	489	47
-	+	489	77
-	+	489	24
-	+	489	31
-	+	489	61
-	+	468	39
-	+	488	49
-	+	515	0
-	+	468	51
-	+	467	61
-	+	487	63
-	+	488	51
-	+	468	42
-	+	488	54
-	+	467	61
-	+	487	71
-	+	467	68
-	+	468	16
-	+	488	22
-	+	491	0
-	+	488	37
-	+	661	94
-	+	660	24
-	+	661	37
-	+	660	106
-	+	661	116
-	+	660	0
-	+	658	0
-	+	671	13
-	+	661	115
-	+	488	33
-	+	473	14
-	+	477	8
-	+	478	0
-	+	478	48
-	+	485	0
-	+	480	34
-	+	481	13
-	+	483	21
-	+	482	25
-	+	489	57
-	+	478	16
-	+	488	34
-	+	489	59
-	+	488	34
-	+	478	59
-	+	489	32
-	+	22	26
-	+	488	46
-	+	421	42
-	+	397	0
-	+	399	0
-	+	429	0
-	+	428	56
-	+	424	24
 
 > ~/WORKSPACE/DRAMErrorInjector/APICRegOpsIfc.c
 	"	17	0
@@ -2019,20 +2094,6 @@ $
 	+	10	0
 	+	12	14
 
-> ~/.vimrc.local
-	"	628	0
-
-> ~/.vimrc
-	"	1293	0
-	.	185	0
-	+	1057	0
-	+	1058	0
-	+	1057	47
-	+	191	0
-	+	185	0
-	+	185	0
-	+	185	0
-
 > ~/.vim/bundle/vim-colors-solarized/colors/NERD_tree_3
 	"	4	0
 	.	1	0
@@ -2339,9 +2400,3 @@ $
 	"	66	0
 	.	10	0
 	+	10	0
-
-> /etc/rsyslog.d/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
