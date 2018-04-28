@@ -14,9 +14,9 @@ set wrap
 set textwidth=0
 set wrapmargin=0
 set colorcolumn=81
-hi ColorColumn     ctermfg=29     ctermbg=254    guifg=#00875F    guibg=#E4E4E4
-"highlight ColorColumn ctermbg=7
-"highlight ColorColumn guifg=lightgrey guibg=lightgrey
+" hi ColorColumn     ctermfg=29     ctermbg=254    guifg=#00875F    guibg=#E4E4E4
+" highlight ColorColumn ctermbg=7
+" highlight ColorColumn guifg=lightgrey guibg=lightgrey
 
 " au FileType php setlocal dict+=~/.vim/dict/php_funclist.dict
 " au FileType css setlocal dict+=~/.vim/dict/css.dict
@@ -631,7 +631,7 @@ let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 
-syntax enable
-let g:solarized_termcolors=256
-set background=dark
+" syntax enable
+" let g:solarized_termcolors=256
+" set background=dark
 " colorscheme solarized

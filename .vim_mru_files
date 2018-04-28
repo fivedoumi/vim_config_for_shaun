@@ -1,6 +1,9 @@
 # Most recently edited files in Vim (version 3.0)
-/home/higon/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+/home/higon/WORKSPACE/DRAMErrorInjector/APICRegOpsIfc.c
 /home/higon/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+/home/higon/.vim/bundle/vim-colorschemes/colors/solarized.vim
+/home/higon/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+/home/higon/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
 /home/higon/.vimrc
 /home/higon/.gitignore
 /home/higon/.vimrc.local
@@ -12,7 +15,6 @@
 /home/higon/Desktop/qtcreator.desktop
 /home/higon/remotemount.sh
 /home/higon/.zshrc
-/home/higon/WORKSPACE/DRAMErrorInjector/APICRegOpsIfc.c
 /home/higon/WORKSPACE/DRAMErrorInjector/DRAMErrorInjector.c
 /home/higon/WORKSPACE/DRAMErrorInjector/BaseHelperLib.h
 /home/higon/WORKSPACE/DRAMErrorInjector/DFRegOpsIfc.c
@@ -97,5 +99,3 @@
 /home/higon/WORKSPACE/DataOrganizeProcess/test.c
 /home/higon/.viminfo
 /tmp/viyQuf9/377
-/home/higon/.vnc/bogon:1.log
-/home/higon/.vnc/bogon:2.log

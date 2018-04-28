@@ -8,16 +8,23 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/\<TEST_SCOPE_PATTERN_LIST\>
+~MSle0~/colorcolumn
 
 # Last Substitute Search Pattern:
-~MSle0~&\t
+~MSle0&\t
 
 # Last Substitute String:
 $    
 
 # Command Line History (newest to oldest):
 :qa
+:colorscheme solarized
+:colorscheme industry
+:colorscheme charon
+:colorscheme coffee
+:help hi ColorColumn 
+:set colorcolumn=81
+:hi ColorColumn ctermbg=9
 :wa
 :hi ColorColumn ctermbg=11
 :highlight ColorColumn ctermbg=11
@@ -29,12 +36,9 @@ $
 :help highlight-ctermbg
 :highlight ColorColumn ctermfg=8
 :highlight ColorColumn ctermbg=7
-:colorscheme solarized
-:colorscheme industry
 :colorscheme adobe
 :hi ColorColumn guifg=@11f0c3 guibg=#ff00ff
 :hi ColorColumn guifg=@11f0c3
-:set colorcolumn=81
 :wqa
 :q!
 :e
@@ -63,15 +67,11 @@ $
 :cs t t cache
 :%s/errinjres/perrinjresp/g
 :cs f t Normalized
-:cs f t "Normalized"
-:cs f t "Normalized Address"
-:cs f t V0.30
-:cs f t version
 
 # Search String History (newest to oldest):
+?/colorcolumn
 ?/colorschem
 ? \t
-?/colorcolumn
 ? \s\+$
 ? \<TEST_SCOPE_PATTERN_LIST\>
 ?/-----
@@ -158,21 +158,30 @@ $
 	#
 
 # File marks:
-'Z  6  0  ~/.gitignore
-'0  373  8  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
-'1  1  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-'2  80  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-'3  217  2  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-'4  205  2  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-'5  9  10  ~/.gitignore
-'6  18  7  ~/.gitignore
-'7  19  0  ~/.gitignore
-'8  19  1  ~/.gitignore
-'9  19  14  ~/.gitignore
+'0  83  32  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+'1  112  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+'2  447  26  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+'3  43  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+'4  371  4  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+'5  373  8  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+'6  1  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+'7  80  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+'8  217  2  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+'9  205  2  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
 
 # Jumplist (newest first):
+-'  83  32  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  112  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  139  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  447  26  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  362  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  43  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  166  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  42  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  13  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  1  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  371  4  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
 -'  373  8  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  362  6  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
 -'  1  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
 -'  110  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
 -'  80  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
@@ -205,179 +214,167 @@ $
 -'  61  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
 -'  831  91  ~/WORKSPACE/DataReorganizer/DataReorganize.py
 -'  814  33  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  801  32  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  798  42  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  547  28  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  543  12  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  541  47  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  539  38  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  438  28  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  434  12  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  432  47  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  430  38  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  374  74  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  296  27  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  292  12  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  289  38  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  93  8  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  63  32  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  321  24  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  826  22  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  119  86  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  963  4  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  293  18  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  288  26  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  931  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  937  4  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  933  4  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  50  34  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  48  26  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  46  26  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  1  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  132  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  129  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  31  2  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  958  21  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  959  15  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  41  38  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  803  58  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  32  14  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  911  27  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  745  23  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  505  36  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  504  48  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  973  4  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  953  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  859  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  927  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  278  4  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  960  4  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  957  4  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  338  44  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  312  16  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  23  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  35  45  ~/WORKSPACE/DataReorganizer/DataReorganize.py
+-'  4  0  ~/.spf13-vim-3/NERD_tree_2
+-'  18  2  ~/.spf13-vim-3/NERD_tree_2
+-'  1  0  ~/.spf13-vim-3/NERD_tree_2
+-'  1  0  ~/.spf13-vim-3/.gitignore
+-'  50  0  ~/WORKSPACE/DRAMErrorInjector/DhyanaSocConf.h
 -'  4667  0  ~/.zsh_history
 -'  1  0  ~/.zsh_history
 -'  316  0  ~/.zsh_history
 -'  315  0  ~/.zsh_history
--'  4667  0  ~/.zsh_history
--'  1  0  ~/.zsh_history
--'  316  0  ~/.zsh_history
--'  315  0  ~/.zsh_history
--'  214  71  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  178  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  8  0  ~/.git/config
--'  1  0  ~/.git/config
--'  3  0  ~/.gitignore
--'  186  44  ~/.vimrc
+-'  62  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
+-'  61  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
+-'  831  91  ~/WORKSPACE/DataReorganizer/DataReorganize.py
+-'  814  33  ~/WORKSPACE/DataReorganizer/DataReorganize.py
+-'  43  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  166  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  42  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  13  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  1  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  4  0  ~/.spf13-vim-3/NERD_tree_2
+-'  18  2  ~/.spf13-vim-3/NERD_tree_2
+-'  1  0  ~/.spf13-vim-3/NERD_tree_2
+-'  1  0  ~/.spf13-vim-3/.gitignore
+-'  50  0  ~/WORKSPACE/DRAMErrorInjector/DhyanaSocConf.h
+-'  447  26  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  362  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  43  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  166  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  42  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  13  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  1  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  371  4  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  373  8  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  447  26  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  362  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  43  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  166  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  42  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  13  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  1  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  371  4  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  373  8  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  9  10  ~/.gitignore
+-'  18  7  ~/.gitignore
+-'  4  0  ~/.gitignore
+-'  10  0  ~/.gitignore
+-'  19  6  ~/.gitignore
+-'  447  26  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  362  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  43  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  166  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  42  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  13  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  1  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
 
 # History of marks within files (newest to oldest):
 
-> ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
-	"	373	8
-	^	428	57
-	.	424	24
-	+	379	0
-	+	396	0
-	+	410	0
-	+	398	12
-	+	380	16
-	+	398	14
-	+	488	62
-	+	489	58
-	+	568	0
-	+	507	0
-	+	506	0
-	+	412	0
-	+	427	0
-	+	418	0
-	+	427	24
-	+	430	0
-	+	424	4
-	+	425	20
-	+	463	0
-	+	424	0
-	+	418	0
-	+	426	4
-	+	418	0
-	+	660	16
-	+	660	106
-	+	660	0
-	+	661	87
-	+	487	7
-	+	508	0
-	+	508	0
-	+	510	86
-	+	511	0
-	+	513	86
-	+	514	0
-	+	511	0
-	+	508	0
-	+	514	0
-	+	515	85
-	+	487	95
-	+	468	4
-	+	467	4
-	+	466	0
-	+	468	38
-	+	488	46
-	+	489	40
-	+	489	47
-	+	489	77
-	+	489	24
-	+	489	31
-	+	489	61
-	+	468	39
-	+	488	49
-	+	515	0
-	+	468	51
-	+	467	61
-	+	487	63
-	+	488	51
-	+	468	42
-	+	488	54
-	+	467	61
-	+	487	71
-	+	467	68
-	+	468	16
-	+	488	22
-	+	491	0
-	+	488	37
-	+	661	94
-	+	660	24
-	+	661	37
-	+	660	106
-	+	661	116
-	+	660	0
-	+	658	0
-	+	671	13
-	+	661	115
-	+	488	33
-	+	473	14
-	+	477	8
-	+	478	0
-	+	478	48
-	+	485	0
-	+	480	34
-	+	481	13
-	+	483	21
-	+	482	25
-	+	489	57
-	+	478	16
-	+	488	34
-	+	489	59
-	+	488	34
-	+	478	59
-	+	489	32
-	+	22	26
-	+	488	46
-	+	421	42
-	+	397	0
-	+	399	0
-	+	429	0
-	+	428	56
-	+	424	24
+> ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+	"	83	32
+	^	139	0
+	.	160	0
+	+	700	53
+	+	700	0
+	+	700	71
+	+	701	0
+	+	901	47
+	+	702	0
+	+	701	27
+	+	700	0
+	+	708	0
+	+	705	0
+	+	718	0
+	+	717	70
+	+	722	0
+	+	721	0
+	+	720	70
+	+	689	2
+	+	690	9
+	+	691	1
+	+	692	14
+	+	693	14
+	+	694	16
+	+	695	19
+	+	696	36
+	+	697	1
+	+	698	10
+	+	699	2
+	+	690	46
+	+	692	17
+	+	693	17
+	+	694	19
+	+	695	22
+	+	696	19
+	+	692	28
+	+	693	28
+	+	694	42
+	+	698	0
+	+	692	0
+	+	915	10
+	+	927	56
+	+	1026	5
+	+	884	78
+	+	885	75
+	+	886	75
+	+	887	75
+	+	884	96
+	+	885	93
+	+	886	93
+	+	887	93
+	+	885	76
+	+	886	76
+	+	887	80
+	+	886	80
+	+	885	80
+	+	884	68
+	+	882	67
+	+	890	64
+	+	882	64
+	+	884	69
+	+	885	76
+	+	886	80
+	+	887	84
+	+	882	15
+	+	884	13
+	+	885	0
+	+	890	15
+	+	882	17
+	+	884	15
+	+	885	0
+	+	884	35
+	+	885	32
+	+	886	0
+	+	885	33
+	+	886	33
+	+	887	33
+	+	885	70
+	+	886	0
+	+	885	71
+	+	886	71
+	+	887	71
+	+	884	63
+	+	885	72
+	+	886	0
+	+	882	68
+	+	890	67
+	+	885	33
+	+	886	33
+	+	887	33
+	+	1002	0
+	+	61	0
+	+	61	15
+	+	63	51
+	+	61	12
+	+	65	0
+	+	100	0
+	+	104	0
+	+	140	0
+	+	139	0
+	+	144	0
+	+	61	0
+	+	160	0
+	d	690	1
 
 > ~/WORKSPACE/DRAMErrorInjector/NERD_tree_2
 	"	4	0
@@ -484,108 +481,108 @@ $
 	+	1	0
 
 > ~/WORKSPACE/DRAMErrorInjector/__Tag_List__
-	"	15	4
-	.	19	0
-	+	459	0
-	+	458	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	441	0
-	+	440	0
-	+	423	0
-	+	423	0
-	+	423	0
-	+	423	0
-	+	423	0
-	+	423	0
-	+	423	0
-	+	423	0
-	+	423	0
-	+	422	0
-	+	413	0
-	+	399	0
-	+	385	0
-	+	367	0
-	+	350	0
-	+	350	0
-	+	350	0
-	+	350	0
-	+	350	0
-	+	350	0
-	+	350	0
-	+	349	0
+	"	9	4
+	.	16	0
+	+	540	0
+	+	540	0
+	+	540	0
+	+	540	0
+	+	540	0
+	+	540	0
+	+	540	0
+	+	540	0
+	+	540	0
+	+	540	0
+	+	540	0
+	+	539	0
+	+	522	0
+	+	522	0
+	+	522	0
+	+	522	0
+	+	522	0
+	+	522	0
+	+	522	0
+	+	522	0
+	+	522	0
+	+	521	0
+	+	512	0
+	+	498	0
+	+	484	0
+	+	466	0
+	+	449	0
+	+	449	0
+	+	449	0
+	+	449	0
+	+	449	0
+	+	449	0
+	+	449	0
+	+	448	0
+	+	430	0
+	+	417	0
+	+	417	0
+	+	417	0
+	+	416	0
+	+	403	0
+	+	403	0
+	+	403	0
+	+	403	0
+	+	403	0
+	+	402	0
+	+	395	0
+	+	395	0
+	+	395	0
+	+	395	0
+	+	395	0
+	+	395	0
+	+	395	0
+	+	395	0
+	+	395	0
+	+	394	0
+	+	376	0
+	+	362	0
+	+	362	0
+	+	362	0
+	+	362	0
+	+	362	0
+	+	362	0
+	+	362	0
+	+	362	0
+	+	362	0
+	+	361	0
+	+	346	0
+	+	332	0
 	+	331	0
-	+	318	0
-	+	318	0
-	+	318	0
-	+	317	0
-	+	304	0
-	+	304	0
-	+	304	0
-	+	304	0
-	+	304	0
-	+	303	0
-	+	296	0
-	+	296	0
-	+	296	0
-	+	296	0
-	+	296	0
-	+	296	0
-	+	296	0
+	+	316	0
+	+	302	0
+	+	302	0
+	+	301	0
 	+	296	0
 	+	296	0
 	+	295	0
-	+	277	0
-	+	263	0
-	+	263	0
-	+	263	0
-	+	263	0
-	+	263	0
-	+	263	0
-	+	263	0
-	+	263	0
-	+	263	0
-	+	262	0
-	+	247	0
-	+	233	0
-	+	232	0
-	+	217	0
-	+	203	0
-	+	203	0
-	+	202	0
-	+	197	0
-	+	197	0
-	+	196	0
-	+	191	0
-	+	190	0
-	+	185	0
-	+	185	0
-	+	184	0
-	+	169	0
-	+	154	0
-	+	140	0
-	+	140	0
-	+	139	0
-	+	124	0
-	+	109	0
-	+	94	0
-	+	79	0
+	+	290	0
+	+	289	0
+	+	284	0
+	+	284	0
+	+	283	0
+	+	268	0
+	+	253	0
+	+	239	0
+	+	239	0
+	+	238	0
+	+	223	0
+	+	208	0
+	+	193	0
+	+	178	0
+	+	163	0
+	+	148	0
+	+	133	0
+	+	118	0
+	+	100	0
+	+	82	0
 	+	64	0
-	+	49	0
-	+	34	0
-	+	19	0
+	+	46	0
+	+	31	0
+	+	16	0
 
 > ~/WORKSPACE/DRAMErrorInjector/-MiniBufExplorer-
 	"	1	0
@@ -691,111 +688,140 @@ $
 	+	2	0
 	+	2	0
 
-> ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-	"	139	0
-	^	139	0
-	.	160	0
-	+	700	53
-	+	700	0
-	+	700	71
-	+	701	0
-	+	901	47
-	+	702	0
-	+	701	27
-	+	700	0
-	+	708	0
-	+	705	0
-	+	718	0
-	+	717	70
-	+	722	0
-	+	721	0
-	+	720	70
-	+	689	2
-	+	690	9
-	+	691	1
-	+	692	14
-	+	693	14
-	+	694	16
-	+	695	19
-	+	696	36
-	+	697	1
-	+	698	10
-	+	699	2
-	+	690	46
-	+	692	17
-	+	693	17
-	+	694	19
-	+	695	22
-	+	696	19
-	+	692	28
-	+	693	28
-	+	694	42
-	+	698	0
-	+	692	0
-	+	915	10
-	+	927	56
-	+	1026	5
-	+	884	78
-	+	885	75
-	+	886	75
-	+	887	75
-	+	884	96
-	+	885	93
-	+	886	93
-	+	887	93
-	+	885	76
-	+	886	76
-	+	887	80
-	+	886	80
-	+	885	80
-	+	884	68
-	+	882	67
-	+	890	64
-	+	882	64
-	+	884	69
-	+	885	76
-	+	886	80
-	+	887	84
-	+	882	15
-	+	884	13
-	+	885	0
-	+	890	15
-	+	882	17
-	+	884	15
-	+	885	0
-	+	884	35
-	+	885	32
-	+	886	0
-	+	885	33
-	+	886	33
-	+	887	33
-	+	885	70
-	+	886	0
-	+	885	71
-	+	886	71
-	+	887	71
-	+	884	63
-	+	885	72
-	+	886	0
-	+	882	68
-	+	890	67
-	+	885	33
-	+	886	33
-	+	887	33
-	+	1002	0
-	+	61	0
-	+	61	15
-	+	63	51
-	+	61	12
-	+	65	0
-	+	100	0
-	+	104	0
-	+	140	0
-	+	139	0
-	+	144	0
-	+	61	0
-	+	160	0
-	d	690	1
+> ~/Desktop/NERD_tree_3
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Desktop/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+	"	447	26
+	^	428	57
+	.	424	24
+	+	379	0
+	+	396	0
+	+	410	0
+	+	398	12
+	+	380	16
+	+	398	14
+	+	488	62
+	+	489	58
+	+	568	0
+	+	507	0
+	+	506	0
+	+	412	0
+	+	427	0
+	+	418	0
+	+	427	24
+	+	430	0
+	+	424	4
+	+	425	20
+	+	463	0
+	+	424	0
+	+	418	0
+	+	426	4
+	+	418	0
+	+	660	16
+	+	660	106
+	+	660	0
+	+	661	87
+	+	487	7
+	+	508	0
+	+	508	0
+	+	510	86
+	+	511	0
+	+	513	86
+	+	514	0
+	+	511	0
+	+	508	0
+	+	514	0
+	+	515	85
+	+	487	95
+	+	468	4
+	+	467	4
+	+	466	0
+	+	468	38
+	+	488	46
+	+	489	40
+	+	489	47
+	+	489	77
+	+	489	24
+	+	489	31
+	+	489	61
+	+	468	39
+	+	488	49
+	+	515	0
+	+	468	51
+	+	467	61
+	+	487	63
+	+	488	51
+	+	468	42
+	+	488	54
+	+	467	61
+	+	487	71
+	+	467	68
+	+	468	16
+	+	488	22
+	+	491	0
+	+	488	37
+	+	661	94
+	+	660	24
+	+	661	37
+	+	660	106
+	+	661	116
+	+	660	0
+	+	658	0
+	+	671	13
+	+	661	115
+	+	488	33
+	+	473	14
+	+	477	8
+	+	478	0
+	+	478	48
+	+	485	0
+	+	480	34
+	+	481	13
+	+	483	21
+	+	482	25
+	+	489	57
+	+	478	16
+	+	488	34
+	+	489	59
+	+	488	34
+	+	478	59
+	+	489	32
+	+	22	26
+	+	488	46
+	+	421	42
+	+	397	0
+	+	399	0
+	+	429	0
+	+	428	56
+	+	424	24
+
+> ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+	"	43	9
+
+> ~/.vimviews/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.vimviews/__Tag_List__
+	"	7	4
+	.	8	0
+	+	8	0
+
+> ~/.vimviews/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
 
 > ~/.vimrc
 	"	186	44
@@ -1357,12 +1383,6 @@ $
 	.	1	0
 	+	1	0
 	+	1	0
-
-> ~/Desktop/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
 
 > ~/remotemount.sh
 	"	5	34
@@ -2128,275 +2148,3 @@ $
 
 > ~/WORKSPACE/DRAMErrorInjector/DFRegOpsIfc.h
 	"	214	0
-
-> ~/WORKSPACE/DRAMErrorInjector/TransDramAddrHelperLib.c
-	"	999	0
-	^	240	42
-	.	240	41
-	+	19	18
-	+	18	8
-	+	19	0
-	+	240	34
-	+	729	0
-	+	732	0
-	+	734	0
-	+	999	0
-	+	742	34
-	+	775	0
-	+	742	52
-	+	744	11
-	+	997	4
-	+	998	14
-	+	774	0
-	+	745	0
-	+	997	5
-	+	948	0
-	+	742	53
-	+	803	24
-	+	398	37
-	+	404	0
-	+	411	0
-	+	419	0
-	+	432	0
-	+	438	0
-	+	949	0
-	+	996	0
-	+	905	4
-	+	906	0
-	+	906	0
-	+	766	0
-	+	755	0
-	+	921	0
-	+	921	0
-	+	930	0
-	+	934	0
-	+	930	0
-	+	921	0
-	+	921	0
-	+	934	0
-	+	841	28
-	+	826	28
-	+	748	0
-	+	763	12
-	+	760	50
-	+	737	18
-	+	970	0
-	+	971	4
-	+	970	40
-	+	768	54
-	+	769	12
-	+	768	0
-	+	764	11
-	+	763	0
-	+	761	21
-	+	762	11
-	+	761	0
-	+	971	0
-	+	749	0
-	+	771	0
-	+	861	0
-	+	749	0
-	+	763	0
-	+	771	0
-	+	765	42
-	+	960	0
-	+	959	29
-	+	957	0
-	+	958	0
-	+	957	37
-	+	970	0
-	+	960	0
-	+	957	0
-	+	49	0
-	+	102	0
-	+	211	17
-	+	214	14
-	+	211	0
-	+	215	0
-	+	214	19
-	+	211	35
-	+	212	0
-	+	211	0
-	+	214	0
-	+	134	0
-	+	138	0
-	+	50	0
-	+	209	0
-	+	210	0
-	+	209	44
-	+	198	66
-	+	199	22
-	+	197	14
-	+	125	25
-	+	168	0
-	+	169	63
-	+	36	64
-	+	742	41
-	+	240	41
-
-> ~/WORKSPACE/DRAMErrorInjector/TransDramChipToSysAddr.c
-	"	674	0
-	^	352	34
-	.	352	33
-	+	399	4
-	+	413	30
-	+	399	0
-	+	378	0
-	+	399	68
-	+	399	0
-	+	405	0
-	+	404	0
-	+	411	56
-	+	352	58
-	+	378	4
-	+	378	32
-	+	376	7
-	+	376	0
-	+	376	58
-	+	411	0
-	+	360	0
-	+	359	0
-	+	360	67
-	+	375	0
-	+	360	21
-	+	375	22
-	+	376	48
-	+	375	49
-	+	360	50
-	+	405	0
-	+	352	40
-	+	363	66
-	+	363	61
-	+	363	0
-	+	363	54
-	+	375	70
-	+	375	42
-	+	360	60
-	+	375	0
-	+	368	76
-	+	363	0
-	+	363	0
-	+	375	0
-	+	376	0
-	+	378	0
-	+	352	0
-	+	405	0
-	+	411	0
-	+	413	0
-	+	756	0
-	+	193	0
-	+	360	0
-	+	364	41
-	+	365	78
-	+	366	55
-	+	367	0
-	+	368	121
-	+	369	0
-	+	365	32
-	+	366	35
-	+	365	39
-	+	366	39
-	+	369	91
-	+	370	39
-	+	371	0
-	+	357	53
-	+	364	0
-	+	178	63
-	+	182	59
-	+	22	0
-	+	44	0
-	+	49	0
-	+	62	0
-	+	34	10
-	+	78	0
-	+	76	49
-	+	74	0
-	+	73	0
-	+	553	4
-	+	553	0
-	+	542	4
-	+	542	5
-	+	553	21
-	+	556	24
-	+	553	49
-	+	556	55
-	+	553	0
-	+	555	45
-	+	554	43
-	+	378	0
-	+	377	0
-	+	378	0
-	+	399	0
-	+	203	0
-	+	229	0
-	+	377	0
-	+	378	0
-	+	399	0
-	+	542	0
-	+	41	60
-	+	644	37
-	+	143	13
-	+	142	33
-	+	352	33
-
-> ~/WORKSPACE/DRAMErrorInjector/TransSysAddrToDramChip.h
-	"	36	0
-	^	26	47
-	.	26	46
-	+	31	69
-	+	31	69
-	+	31	69
-	+	31	69
-	+	31	69
-	+	29	0
-	+	31	0
-	+	31	69
-	+	31	69
-	+	31	76
-	+	31	69
-	+	31	22
-	+	31	37
-	+	31	52
-	+	31	68
-	+	32	0
-	+	27	0
-	+	31	0
-	+	25	26
-	+	30	0
-	+	31	0
-	+	30	34
-	+	29	13
-	+	28	33
-	+	32	66
-	+	25	33
-	+	26	46
-
-> ~/WORKSPACE/DRAMErrorInjector/TransDramChipToSysAddr.h
-	"	30	5
-	^	30	34
-	.	30	33
-	+	28	28
-	+	29	45
-	+	29	45
-	+	29	45
-	+	29	45
-	+	29	45
-	+	28	57
-	+	29	38
-	+	29	45
-	+	29	45
-	+	30	26
-	+	31	60
-	+	32	37
-	+	28	41
-	+	29	13
-	+	29	45
-	+	29	0
-	+	29	45
-	+	29	45
-	+	30	33
-
-> /etc/rsyslog.d/50-default.conf
-	"	66	0
-	.	10	0
-	+	10	0
