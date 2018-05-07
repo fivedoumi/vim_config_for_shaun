@@ -635,3 +635,5 @@ let g:multi_cursor_quit_key='<Esc>'
 " let g:solarized_termcolors=256
 " set background=dark
 " colorscheme solarized
+" 
+let NERDTreeIgnore=['\.o', 'tags', 'cscope*', '.git*']

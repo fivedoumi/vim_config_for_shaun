@@ -8,117 +8,76 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/colorcolumn
+~Msle0~/\<ShowDieUmcRasRltSetConf\>
 
 # Last Substitute Search Pattern:
-~MSle0&\t
+~MSle0&\.val
 
 # Last Substitute String:
-$    
+$
 
 # Command Line History (newest to oldest):
 :qa
-:colorscheme solarized
-:colorscheme industry
-:colorscheme charon
-:colorscheme coffee
-:help hi ColorColumn 
-:set colorcolumn=81
-:hi ColorColumn ctermbg=9
-:wa
-:hi ColorColumn ctermbg=11
-:highlight ColorColumn ctermbg=11
-:highlight ColorColumn ctermbg=10
-:q
-:help ctermbg
-:highlight ColorColumn ctermbg=2
-:highlight ColorColumn ctermfg=2
-:help highlight-ctermbg
-:highlight ColorColumn ctermfg=8
-:highlight ColorColumn ctermbg=7
-:colorscheme adobe
-:hi ColorColumn guifg=@11f0c3 guibg=#ff00ff
-:hi ColorColumn guifg=@11f0c3
 :wqa
-:q!
-:e
-:highlight ColorColumn guifg=#11f0c3 guibg=#ff00ff
-:highlight ColorColumn guifg=#11f0c3 guibd=#ff00ff
-:cs f t VERSION
-:cs f f VERSION
-:Dox
+:wa
+:cs f t 033
+:b7
 :b1
 :b6
-:qa!
-:set ignorecase
-:wqa!
-:35
-:cs f t Version
-:cs f t 16
-:cs f t =====
-:wa\
-:Wa
-:cs f t ======
-:%s/-10/-8/g
-:%s/=>/|/g
-:%s/=>//g
-:cs f t CACHE
-:cs f t cache
-:cs t t cache
-:%s/errinjres/perrinjresp/g
-:cs f t Normalized
+:Dox
+:%s/\.val/\.val, optcmdarg[].name/g
+:%s/\.val/\.val, 
+:\.val
+:%s/--]/--%s ]/g
+:%s/--]/--%]/g
+:%s/opinx/optidx/g
+:%s/opidx/optidx/g
+:%s/optchar/optcmdarg/g
+:b2
+:b9
+:%s/):/)/g
+:Tabularize/ 
+:b8
+:Tabularize/}
+:Tabularize/=
+:bn
+:cs f t msr
+:m
+:b10
+:cs f t superuser
 
 # Search String History (newest to oldest):
-?/colorcolumn
-?/colorschem
-? \t
+? \<ShowDieUmcRasRltSetConf\>
 ? \s\+$
-? \<TEST_SCOPE_PATTERN_LIST\>
-?/-----
-?/test scope
-?/resultdatas
-? \<AVFS_DIR\>
-? \<create_dir_for_test_result\>
-? \<AVFS_CBD_DIR\>
-?/none
-?/nont
-?/print
-? \<get_avfs_data_from_file_then_write_to_excel\>
-? \<output_full_path_file_name\>
-? \<OUTPUT_FILE_DIR\>
-? \<full_path_file_name\>
-? \<injstatus\>
+?/033
+? \<PrintHelp\>
+? \<ShowUseExample\>
+? \<msr_value\>
+? \<msr_addr\>
+?/\.name
+? \.val
+?/\.val
+?//.val
+?/.val
+? --]
+? \<idx\>
+? \<charidx\>
+? \<optidx\>
+? opinx
+? opidx
+? \<optcmdarg\>
+? optchar
+?/optchar
+? ):
+? \<optchar\>
+? \<longopts\>
+? \<errtype\>
+? \<OP_PRINT_HELP\>
+? \<dev\>
 ? \<already_running\>
-? \<InjectEccErr\>
-? \<errinjaddr\>
-?/edac
-?/37
-?/39
-?/35
-?/success
-?/cs f t polling
-? \<nextbeat\>
-? \<prgsstate\>
-? \<prgsrate\>
-? \<hintspot\>
-?/64
-?/point
-? \<sysMemAddr\>
-? -10
-?/-10
-? =>
-?/|
-?/=>
-? \<Die\>
-?/fuck
-? \<errinjres\>
-?/length
-?/cache
-?/16
-? \<MCASTAT_ERR_UECC_BIT\>
-? \<GetUmcerrinjres\>
-? \<GetUmcerrinjresp\>
-? errinjres
+? \<DEC_ERROR\>
+? \<EXPT_DATA_LOC_SUBDIR\>
+? \<OUTPUT_FILE_DIR\>
 
 # Expression History (newest to oldest):
 
@@ -127,254 +86,156 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	/* !/.vim/ !.vim* !/.spf13-vim-3/
+"0	CHAR	0
+	DFRegVerifyTool
 ""1	LINE	0
-	#/* !/.vim/ !.vim* !/.spf13-vim-3/
+	nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn: 1525658164:0;ls
 "2	LINE	0
-	!.vim* 
-"3	LINE	0
 	
+"3	LINE	0
+	# DFRegVerifyTool: DFRegVerifyTool.c DFRegOpsIfc.c DFRegConfInfo.c
+		# gcc DFRegVerifyTool.c DFRegOpsIfc.c -o DFRegVerifyTool
 "4	LINE	0
-	!/.vim
-	!/.vim/bundle/*
-	!/.spf13-vim-3
-	!.vim*
+	
 "5	LINE	0
-	#*
+	
 "6	LINE	0
-	#./*
+	
 "7	LINE	0
-	#~/*
+	PROGRAM = DFRegVerifyTool
 "8	LINE	0
-	#!~/.vim/*
+	  //printf("msr_addr=%p\n", &msr_addr);
 "9	LINE	0
-	~/*
+	
 "a	CHAR	0
-	€kraad€kba€kb€kb€kbANK_BITakj:wakjkj\\briint kjj:wa
-"j	CHAR	0
-	hh
+	L
 "-	CHAR	0
-	#
+	$(PROGRAM) 
 
 # File marks:
-'0  83  32  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-'1  112  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-'2  447  26  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
-'3  43  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
-'4  371  4  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
-'5  373  8  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
-'6  1  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-'7  80  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-'8  217  2  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-'9  205  2  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+'0  93  4  ~/WORKSPACE/DRAMErrorInjector/DRAMErrorInjector.c
+'1  35  0  ~/WORKSPACE/DRAMErrorInjector/Makefile
+'2  6188  0  ~/.zsh_history
+'3  131  5  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+'4  145  12  ~/WORKSPACE/DFRegVerify/DFRegVerifyTool.c
+'5  3  6  ~/WORKSPACE/DFRegVerify/.gitignore
+'6  16  5  ~/WORKSPACE/DFRegVerify/Makefile
+'7  14  8  ~/WORKSPACE/DFRegVerify/Makefile
+'8  229  0  ~/WORKSPACE/DFRegVerify/DFRegConfInfo.c
+'9  52  3  ~/zaza/msr.c
 
 # Jumplist (newest first):
--'  83  32  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  112  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  139  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  447  26  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  362  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  43  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  166  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  42  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  13  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  1  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  371  4  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  373  8  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  1  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  110  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  80  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  217  2  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  205  2  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  196  19  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  9  10  ~/.gitignore
--'  197  39  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  160  6  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  18  7  ~/.gitignore
--'  4  0  ~/.gitignore
--'  10  0  ~/.gitignore
--'  19  6  ~/.gitignore
--'  1  0  ~/.gitignore
--'  4  0  ~/.spf13-vim-3/NERD_tree_2
--'  18  2  ~/.spf13-vim-3/NERD_tree_2
--'  1  0  ~/.spf13-vim-3/NERD_tree_2
--'  1  0  ~/.spf13-vim-3/.gitignore
--'  122  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  100  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  50  0  ~/WORKSPACE/DRAMErrorInjector/DhyanaSocConf.h
--'  61  38  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  918  0  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  1002  9  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
--'  4667  0  ~/.zsh_history
+-'  93  4  ~/WORKSPACE/DRAMErrorInjector/DRAMErrorInjector.c
+-'  44  5  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  82  8  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  388  5  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  406  12  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  407  0  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  628  6  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  819  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  834  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  896  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  1003  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  1  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  35  0  ~/WORKSPACE/DRAMErrorInjector/Makefile
+-'  32  34  ~/WORKSPACE/DRAMErrorInjector/Makefile
+-'  6188  0  ~/.zsh_history
 -'  1  0  ~/.zsh_history
--'  316  0  ~/.zsh_history
--'  315  0  ~/.zsh_history
--'  62  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  61  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  831  91  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  814  33  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  4  0  ~/.spf13-vim-3/NERD_tree_2
--'  18  2  ~/.spf13-vim-3/NERD_tree_2
--'  1  0  ~/.spf13-vim-3/NERD_tree_2
--'  1  0  ~/.spf13-vim-3/.gitignore
--'  50  0  ~/WORKSPACE/DRAMErrorInjector/DhyanaSocConf.h
--'  4667  0  ~/.zsh_history
--'  1  0  ~/.zsh_history
--'  316  0  ~/.zsh_history
--'  315  0  ~/.zsh_history
--'  62  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  61  0  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  831  91  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  814  33  ~/WORKSPACE/DataReorganizer/DataReorganize.py
--'  43  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  166  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  42  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  13  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  1  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  4  0  ~/.spf13-vim-3/NERD_tree_2
--'  18  2  ~/.spf13-vim-3/NERD_tree_2
--'  1  0  ~/.spf13-vim-3/NERD_tree_2
--'  1  0  ~/.spf13-vim-3/.gitignore
--'  50  0  ~/WORKSPACE/DRAMErrorInjector/DhyanaSocConf.h
--'  447  26  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  362  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  43  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  166  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  42  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  13  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  1  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  371  4  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  373  8  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  447  26  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  362  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  43  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  166  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  42  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  13  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  1  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  371  4  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  373  8  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  9  10  ~/.gitignore
--'  18  7  ~/.gitignore
--'  4  0  ~/.gitignore
--'  10  0  ~/.gitignore
--'  19  6  ~/.gitignore
--'  447  26  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  362  0  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
--'  43  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  166  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  42  9  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  13  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
--'  1  0  ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
+-'  5725  0  ~/.zsh_history
+-'  27  0  ~/.zsh_history
+-'  131  5  ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+-'  792  8  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  770  8  ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+-'  145  12  ~/WORKSPACE/DFRegVerify/DFRegVerifyTool.c
+-'  187  0  ~/WORKSPACE/DFRegVerify/DFRegOpsIfc.c
+-'  1  0  ~/WORKSPACE/DFRegVerify/DFRegOpsIfc.c
+-'  157  0  ~/WORKSPACE/DFRegVerify/DFRegOpsIfc.c
+-'  76  4  ~/WORKSPACE/DFRegVerify/DFRegOpsIfc.c
+-'  2  0  ~/WORKSPACE/DFRegVerify/DFRegOpsIfc.c
+-'  214  0  ~/WORKSPACE/DFRegVerify/DFRegConfInfo.c
+-'  1  0  ~/WORKSPACE/DFRegVerify/DFRegConfInfo.c
+-'  229  0  ~/WORKSPACE/DFRegVerify/DFRegConfInfo.c
+-'  226  4  ~/WORKSPACE/DFRegVerify/DFRegConfInfo.c
+-'  213  4  ~/WORKSPACE/DFRegVerify/DFRegConfInfo.c
+-'  3  6  ~/WORKSPACE/DFRegVerify/.gitignore
+-'  1  0  ~/WORKSPACE/DFRegVerify/.gitignore
+-'  16  5  ~/WORKSPACE/DFRegVerify/Makefile
+-'  14  8  ~/WORKSPACE/DFRegVerify/Makefile
+-'  6  0  ~/WORKSPACE/DFRegVerify/DFRegVerifyTool.c
+-'  203  0  ~/WORKSPACE/DFRegVerify/DFRegVerifyTool.c
+-'  1  0  ~/WORKSPACE/DFRegVerify/DFRegVerifyTool.c
+-'  22  12  ~/WORKSPACE/DFRegVerify/Makefile
+-'  7  0  ~/WORKSPACE/DFRegVerify/Makefile
+-'  52  3  ~/zaza/msr.c
+-'  63  37  ~/zaza/msr.c
+-'  47  44  ~/zaza/msr.c
+-'  67  25  ~/zaza/msr.c
+-'  68  23  ~/zaza/msr.c
+-'  12  46  ~/zaza/msr.c
+-'  66  30  ~/zaza/msr.c
+-'  1  0  ~/zaza/msr.c
+-'  61  77  ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.c
+-'  60  77  ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.c
+-'  63  17  ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.h
+-'  41  6  ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.c
+-'  62  77  ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.c
+-'  99  4  ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.c
+-'  75  4  ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.c
+-'  226  4  ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.c
+-'  96  4  ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.c
+-'  483  0  ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.c
+-'  233  0  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  330  0  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  147  0  ~/WORKSPACE/DRAMErrorInjector/APICRegOpsIfc.c
+-'  5  0  ~/WORKSPACE/DRAMErrorInjector/Makefile
+-'  331  12  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  319  15  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  301  12  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  299  12  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  297  12  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  295  12  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  282  15  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  263  12  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  261  12  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  327  76  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  323  68  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  311  62  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  309  62  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  307  62  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  305  62  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  303  21  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  293  112  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  291  121  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  287  72  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  284  21  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  274  64  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  272  64  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  259  128  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  256  134  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  255  76  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  253  72  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  250  86  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  247  113  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  245  116  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  244  70  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+-'  249  34  ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
 
 # History of marks within files (newest to oldest):
 
-> ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
-	"	83	32
-	^	139	0
-	.	160	0
-	+	700	53
-	+	700	0
-	+	700	71
-	+	701	0
-	+	901	47
-	+	702	0
-	+	701	27
-	+	700	0
-	+	708	0
-	+	705	0
-	+	718	0
-	+	717	70
-	+	722	0
-	+	721	0
-	+	720	70
-	+	689	2
-	+	690	9
-	+	691	1
-	+	692	14
-	+	693	14
-	+	694	16
-	+	695	19
-	+	696	36
-	+	697	1
-	+	698	10
-	+	699	2
-	+	690	46
-	+	692	17
-	+	693	17
-	+	694	19
-	+	695	22
-	+	696	19
-	+	692	28
-	+	693	28
-	+	694	42
-	+	698	0
-	+	692	0
-	+	915	10
-	+	927	56
-	+	1026	5
-	+	884	78
-	+	885	75
-	+	886	75
-	+	887	75
-	+	884	96
-	+	885	93
-	+	886	93
-	+	887	93
-	+	885	76
-	+	886	76
-	+	887	80
-	+	886	80
-	+	885	80
-	+	884	68
-	+	882	67
-	+	890	64
-	+	882	64
-	+	884	69
-	+	885	76
-	+	886	80
-	+	887	84
-	+	882	15
-	+	884	13
-	+	885	0
-	+	890	15
-	+	882	17
-	+	884	15
-	+	885	0
-	+	884	35
-	+	885	32
-	+	886	0
-	+	885	33
-	+	886	33
-	+	887	33
-	+	885	70
-	+	886	0
-	+	885	71
-	+	886	71
-	+	887	71
-	+	884	63
-	+	885	72
-	+	886	0
-	+	882	68
-	+	890	67
-	+	885	33
-	+	886	33
-	+	887	33
-	+	1002	0
-	+	61	0
-	+	61	15
-	+	63	51
-	+	61	12
-	+	65	0
-	+	100	0
-	+	104	0
-	+	140	0
-	+	139	0
-	+	144	0
-	+	61	0
-	+	160	0
-	d	690	1
+> ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
+	"	628	6
+	^	1131	63
+	.	881	0
+	+	32	0
+	+	194	33
+	+	882	25
+	+	883	44
+	+	884	33
+	+	900	25
+	+	901	45
+	+	902	33
+	+	1131	0
+	+	881	0
 
 > ~/WORKSPACE/DRAMErrorInjector/NERD_tree_2
 	"	4	0
@@ -393,199 +254,74 @@ $
 	+	1	0
 	+	1	0
 	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
 
 > ~/WORKSPACE/DRAMErrorInjector/__Tag_List__
-	"	9	4
-	.	16	0
-	+	540	0
-	+	540	0
-	+	540	0
-	+	540	0
-	+	540	0
-	+	540	0
-	+	540	0
-	+	540	0
-	+	540	0
-	+	540	0
-	+	540	0
-	+	539	0
-	+	522	0
-	+	522	0
-	+	522	0
-	+	522	0
-	+	522	0
-	+	522	0
-	+	522	0
-	+	522	0
-	+	522	0
-	+	521	0
-	+	512	0
-	+	498	0
-	+	484	0
-	+	466	0
-	+	449	0
-	+	449	0
-	+	449	0
-	+	449	0
-	+	449	0
-	+	449	0
-	+	449	0
-	+	448	0
-	+	430	0
-	+	417	0
-	+	417	0
-	+	417	0
-	+	416	0
-	+	403	0
-	+	403	0
-	+	403	0
-	+	403	0
-	+	403	0
-	+	402	0
-	+	395	0
-	+	395	0
-	+	395	0
-	+	395	0
-	+	395	0
-	+	395	0
-	+	395	0
-	+	395	0
-	+	395	0
-	+	394	0
-	+	376	0
-	+	362	0
-	+	362	0
-	+	362	0
-	+	362	0
-	+	362	0
-	+	362	0
-	+	362	0
-	+	362	0
-	+	362	0
-	+	361	0
-	+	346	0
-	+	332	0
-	+	331	0
-	+	316	0
-	+	302	0
-	+	302	0
-	+	301	0
-	+	296	0
-	+	296	0
-	+	295	0
-	+	290	0
-	+	289	0
-	+	284	0
-	+	284	0
-	+	283	0
-	+	268	0
-	+	253	0
-	+	239	0
-	+	239	0
-	+	238	0
-	+	223	0
-	+	208	0
-	+	193	0
-	+	178	0
-	+	163	0
-	+	148	0
-	+	133	0
-	+	118	0
-	+	100	0
-	+	82	0
+	"	6	4
+	.	7	0
+	+	176	0
+	+	159	0
+	+	159	0
+	+	159	0
+	+	159	0
+	+	159	0
+	+	159	0
+	+	159	0
+	+	159	0
+	+	159	0
+	+	159	0
+	+	158	0
+	+	152	0
+	+	135	0
+	+	135	0
+	+	135	0
+	+	135	0
+	+	135	0
+	+	134	0
+	+	119	0
+	+	102	0
+	+	101	0
+	+	92	0
+	+	74	0
+	+	74	0
+	+	74	0
+	+	74	0
+	+	74	0
+	+	74	0
+	+	74	0
+	+	74	0
+	+	73	0
+	+	65	0
+	+	65	0
+	+	65	0
+	+	65	0
 	+	64	0
-	+	46	0
-	+	31	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	53	0
+	+	52	0
+	+	43	0
+	+	35	0
+	+	34	0
 	+	16	0
+	+	8	0
+	+	8	0
+	+	7	0
 
 > ~/WORKSPACE/DRAMErrorInjector/-MiniBufExplorer-
-	"	1	0
+	"	1	35
 	.	2	0
 	+	2	0
 	+	2	0
@@ -648,1503 +384,545 @@ $
 	+	2	0
 	+	2	0
 	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
 
-> ~/Desktop/NERD_tree_3
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/Desktop/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.c
-	"	447	26
-	^	428	57
-	.	424	24
-	+	379	0
-	+	396	0
-	+	410	0
-	+	398	12
-	+	380	16
-	+	398	14
-	+	488	62
-	+	489	58
-	+	568	0
-	+	507	0
-	+	506	0
-	+	412	0
-	+	427	0
-	+	418	0
-	+	427	24
-	+	430	0
-	+	424	4
-	+	425	20
+> ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
+	"	44	5
+	^	468	31
+	.	407	0
+	+	269	37
+	+	271	33
+	+	285	35
+	+	289	35
+	+	293	35
+	+	271	31
+	+	269	32
+	+	271	33
+	+	252	0
+	+	254	0
+	+	265	0
+	+	268	0
+	+	270	0
+	+	272	0
+	+	286	65
+	+	295	51
+	+	298	0
+	+	300	0
+	+	302	0
+	+	304	0
+	+	306	0
+	+	323	65
+	+	257	0
+	+	259	0
+	+	249	0
+	+	250	66
+	+	249	68
+	+	251	0
+	+	249	40
+	+	36	0
+	+	73	0
+	+	77	0
+	+	73	54
+	+	455	0
+	+	460	0
+	+	461	1
+	+	470	10
+	+	460	11
+	+	470	0
+	+	75	21
+	+	434	2
+	+	435	9
+	+	436	1
+	+	437	10
+	+	438	2
+	+	435	46
+	+	457	2
+	+	458	9
+	+	459	2
+	+	458	44
+	+	237	18
+	+	460	23
+	+	462	21
+	+	277	0
+	+	278	0
+	+	241	19
+	+	282	17
+	+	283	64
+	+	282	0
+	+	284	0
+	+	274	0
+	+	276	0
+	+	274	16
+	+	275	63
+	+	307	0
+	+	309	0
+	+	319	16
+	+	320	63
+	+	321	0
+	+	319	0
+	+	437	0
+	+	462	37
+	+	464	13
+	+	462	39
+	+	465	12
+	+	465	0
+	+	465	45
+	+	464	41
+	+	465	109
+	+	464	29
+	+	465	51
+	+	468	0
+	+	467	0
+	+	468	72
+	+	469	71
 	+	463	0
-	+	424	0
-	+	418	0
-	+	426	4
-	+	418	0
-	+	660	16
-	+	660	106
-	+	660	0
-	+	661	87
-	+	487	7
-	+	508	0
-	+	508	0
-	+	510	86
-	+	511	0
-	+	513	86
-	+	514	0
-	+	511	0
-	+	508	0
-	+	514	0
-	+	515	85
-	+	487	95
-	+	468	4
-	+	467	4
-	+	466	0
-	+	468	38
-	+	488	46
-	+	489	40
-	+	489	47
-	+	489	77
-	+	489	24
-	+	489	31
-	+	489	61
-	+	468	39
-	+	488	49
-	+	515	0
-	+	468	51
-	+	467	61
-	+	487	63
-	+	488	51
-	+	468	42
-	+	488	54
-	+	467	61
-	+	487	71
-	+	467	68
-	+	468	16
-	+	488	22
-	+	491	0
-	+	488	37
-	+	661	94
-	+	660	24
-	+	661	37
-	+	660	106
-	+	661	116
-	+	660	0
-	+	658	0
-	+	671	13
-	+	661	115
-	+	488	33
-	+	473	14
-	+	477	8
-	+	478	0
-	+	478	48
-	+	485	0
-	+	480	34
-	+	481	13
-	+	483	21
-	+	482	25
-	+	489	57
-	+	478	16
-	+	488	34
-	+	489	59
-	+	488	34
-	+	478	59
-	+	489	32
-	+	22	26
-	+	488	46
-	+	421	42
-	+	397	0
-	+	399	0
-	+	429	0
-	+	428	56
-	+	424	24
+	+	466	16
+	+	468	12
+	+	464	52
+	+	464	12
+	+	468	12
+	+	464	92
+	+	468	90
+	+	464	22
+	+	468	22
+	+	464	23
+	+	468	23
+	+	464	30
+	+	468	30
+	+	407	0
+	d	458	1
 
-> ~/.vimviews/~=+WORKSPACE=+DRAMErrorInjector=+EccErrAnls.c=
-	"	43	9
+> ~/WORKSPACE/DRAMErrorInjector/DRAMErrorInjector.c
+	"	93	4
+	^	53	63
+	.	134	19
+	+	53	61
+	+	122	42
+	+	134	19
 
-> ~/.vimviews/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
+> ~/WORKSPACE/DRAMErrorInjector/Makefile
+	"	35	0
+	^	38	43
+	.	38	42
+	+	5	0
+	+	5	0
+	+	5	0
+	+	36	0
+	+	38	11
+	+	32	41
+	+	38	42
 
-> ~/.vimviews/__Tag_List__
-	"	7	4
-	.	8	0
-	+	8	0
-
-> ~/.vimviews/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-
-> ~/.vimrc
-	"	186	44
-	^	186	22
-	.	185	0
-	+	1058	0
-	+	1059	0
-	+	1058	47
-	+	192	0
-	+	185	0
-	+	185	0
-	+	185	0
-	+	186	21
-	+	185	0
+> ~/.zsh_history
+	"	6188	0
+	.	6187	0
+	+	6187	0
 
 > ~/NERD_tree_2
 	"	4	0
 	.	1	0
 	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
 
 > ~/__Tag_List__
-	"	87	4
-	.	134	0
-	+	455	0
-	+	452	0
-	+	449	0
-	+	446	0
-	+	443	0
-	+	440	0
-	+	437	0
-	+	434	0
-	+	431	0
-	+	428	0
-	+	425	0
-	+	422	0
-	+	290	0
-	+	288	0
-	+	288	0
-	+	287	0
-	+	228	0
-	+	225	0
-	+	222	0
-	+	219	0
-	+	216	0
-	+	211	0
-	+	206	0
-	+	203	0
-	+	200	0
-	+	197	0
-	+	194	0
-	+	134	0
+	"	3	0
+	.	4	0
+	+	4	0
 
 > ~/-MiniBufExplorer-
 	"	1	0
 	.	2	0
 	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
 
-> /usr/share/vim/vim74/doc/syntax.txt
-	"	4702	23
+> ~/WORKSPACE/DRAMErrorInjector/EccErrInj.c
+	"	792	8
+	.	770	0
+	+	730	69
+	+	813	69
+	+	178	0
+	+	180	53
+	+	182	0
+	+	770	44
+	+	770	46
+	+	770	37
+	+	770	0
 
-> ~/.gitignore
-	"	9	10
-	^	6	0
-	.	8	0
-	+	19	6
-	+	19	12
-	+	19	3
-	+	19	2
-	+	19	1
-	+	19	1
-	+	19	1
-	+	19	1
-	+	19	1
-	+	1	0
-	+	1	11
-	+	1	2
-	+	1	12
-	+	19	6
-	+	19	14
-	+	1	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	1
-	+	19	1
-	+	19	1
-	+	19	0
-	+	1	10
-	+	19	0
-	+	19	0
-	+	19	0
-	+	1	0
-	+	19	0
-	+	19	0
-	+	19	0
+> ~/WORKSPACE/DRAMErrorInjector/tags
+	"	828	0
+
+> ~/WORKSPACE/DFRegVerify/DFRegConfInfo.c
+	"	214	0
+
+> ~/WORKSPACE/DFRegVerify/NERD_tree_2
+	"	15	0
+	.	1	0
 	+	1	0
 	+	1	0
 	+	1	0
-	+	1	1
-	+	19	7
-	+	19	0
-	+	19	0
 	+	1	0
-	+	19	7
 	+	1	0
-	+	19	1
-	+	1	1
-	+	19	6
-	+	19	14
-	+	19	5
-	+	13	1
-	+	16	1
-	+	14	1
+
+> ~/WORKSPACE/DFRegVerify/__Tag_List__
+	"	6	4
+	.	7	0
+	+	66	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	23	0
 	+	15	0
-	+	17	0
-	+	11	0
-	+	1	19
+	+	8	0
+	+	8	0
+	+	7	0
+
+> ~/WORKSPACE/DFRegVerify/-MiniBufExplorer-
+	"	1	36
+	.	2	0
 	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/WORKSPACE/DFRegVerify/DFRegOpsIfc.c
+	"	187	0
+
+> ~/WORKSPACE/DFRegVerify/DFRegVerifyTool.c
+	"	145	12
+	.	6	0
+	+	6	0
+
+> ~/WORKSPACE/DFRegVerify/.gitignore
+	"	3	6
+	^	3	7
+	.	3	6
 	+	3	6
+
+> ~/WORKSPACE/DFRegVerify/Makefile
+	"	16	5
+	^	17	6
+	.	17	5
+	+	7	19
+	+	11	0
+	+	11	0
 	+	12	6
-	+	18	6
-	+	19	0
-	+	4	2
-	+	10	0
-	+	9	0
-	+	9	0
-	+	4	9
-	+	9	1
-	+	10	0
-	+	4	11
-	+	10	0
-	+	4	32
-	+	10	0
-	+	8	0
-	+	8	0
-	+	4	3
-	+	5	7
+	+	13	22
+	+	1	0
+	+	1	0
+	+	4	0
+	+	5	0
+	+	1	5
+	+	5	0
+	+	5	53
 	+	6	0
 	+	7	0
-	+	8	0
-
-> ~/.vimrc.local
-	"	16	0
-	.	16	0
-	+	634	0
-	+	16	0
-
-> ~/.git/config
-	"	8	0
-
-> ~/.git/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/.git/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-
-> ~/.spf13-vim-3/.gitignore
-	"	4	0
-	^	4	0
-	.	4	0
-	+	4	0
-
-> ~/.spf13-vim-3/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/.spf13-vim-3/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-
-> ~/WORKSPACE/DRAMErrorInjector/DhyanaSocConf.h
-	"	50	0
-	^	55	20
-	.	55	19
-	+	122	22
-	+	54	0
-	+	55	19
-
-> ~/.zsh_history
-	"	4667	0
-	.	4668	0
-	+	4668	0
-
-> ~/WORKSPACE/DataReorganizer/DataReorganize.py
-	"	62	0
-	^	292	58
-	.	541	0
-	+	887	8
-	+	890	31
-	+	893	40
-	+	894	0
-	+	891	0
-	+	921	26
-	+	921	16
-	+	921	33
-	+	916	16
-	+	916	0
-	+	917	0
-	+	916	31
-	+	917	11
-	+	918	0
-	+	921	0
-	+	916	0
-	+	920	0
-	+	919	0
-	+	915	49
-	+	966	0
-	+	905	0
-	+	902	36
-	+	909	21
-	+	910	39
-	+	962	0
-	+	956	0
-	+	33	0
-	+	29	23
-	+	34	20
-	+	29	10
-	+	34	32
-	+	35	44
-	+	36	17
-	+	76	0
-	+	68	0
-	+	67	0
-	+	73	0
-	+	72	0
-	+	70	0
-	+	71	0
-	+	69	20
-	+	75	0
-	+	32	0
-	+	74	1
-	+	13	10
-	+	912	0
-	+	912	0
-	+	911	30
-	+	912	0
-	+	48	37
-	+	50	45
-	+	48	37
-	+	50	45
-	+	927	4
-	+	954	0
-	+	928	38
-	+	936	29
-	+	954	0
-	+	954	0
-	+	935	38
-	+	937	33
-	+	938	34
-	+	942	8
-	+	944	37
-	+	947	8
-	+	949	14
-	+	948	45
-	+	950	32
-	+	951	13
-	+	952	19
-	+	953	12
-	+	954	0
-	+	954	0
-	+	911	27
-	+	943	0
-	+	959	31
-	+	958	37
-	+	933	23
-	+	929	0
-	+	934	0
-	+	931	33
-	+	939	8
-	+	941	48
-	+	940	22
-	+	959	38
-	+	958	24
-	+	950	31
-	+	930	17
-	+	945	8
-	+	946	21
-	+	958	51
-	+	933	0
-	+	932	24
-	+	291	63
-	+	292	57
-	+	291	24
-	+	433	0
-	+	432	0
-	+	542	0
-	+	541	0
-	a	762	18
-
-> ~/WORKSPACE/DataReorganizer/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/WORKSPACE/DataReorganizer/__Tag_List__
-	"	16	4
-	.	22	0
-	+	43	0
-	+	23	0
-	+	22	0
-
-> ~/WORKSPACE/DataReorganizer/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-
-> ~/Desktop/qtcreator.desktop
-	"	3	32
-	^	3	33
-	.	3	32
-	+	3	0
-	+	2	0
-	+	3	32
-
-> ~/Desktop/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/remotemount.sh
-	"	5	34
-	^	5	35
-	.	5	34
-	+	4	23
-	+	5	34
-
-> ~/.zshrc
-	"	62	0
-	^	64	14
-	.	102	0
+	+	7	13
+	+	8	1
+	+	9	16
+	+	10	35
 	+	11	0
-	+	10	0
-	+	11	16
-	+	13	0
-	+	11	14
-	+	12	0
-	+	11	0
-	+	12	18
-	+	11	0
-	+	12	0
-	+	11	0
-	+	12	0
-	+	64	6
-	+	119	0
-	+	102	0
-
-> ~/WORKSPACE/DRAMErrorInjector/APICRegOpsIfc.c
-	"	17	0
-	.	33	0
-	+	33	0
-	+	13	0
-	+	33	0
-
-> ~/WORKSPACE/DRAMErrorInjector/DRAMErrorInjector.c
-	"	15	0
-	^	59	0
-	.	59	0
-	+	129	14
-	+	112	27
-	+	118	23
-	+	119	5
-	+	121	47
-	+	122	18
-	+	120	21
-	+	149	8
-	+	151	14
-	+	150	0
-	+	115	13
-	+	114	15
-	+	116	45
-	+	126	56
-	+	20	22
-	+	24	17
-	+	126	47
-	+	128	0
-	+	125	27
-	+	129	51
-	+	130	14
-	+	131	5
-	+	133	57
-	+	132	16
-	+	134	18
-	+	21	21
-	+	23	16
-	+	129	34
-	+	38	0
-	+	136	4
-	+	139	12
-	+	22	19
-	+	139	6
-	+	139	0
-	+	139	7
-	+	138	10
-	+	139	10
-	+	138	28
-	+	140	5
-	+	141	59
-	+	142	18
-	+	144	4
-	+	145	21
-	+	147	41
-	+	148	35
-	+	147	33
-	+	25	17
-	+	141	30
-	+	32	0
-	+	33	0
-	+	32	41
-	+	49	7
-	+	48	34
-	+	49	15
-	+	50	5
-	+	60	60
-	+	60	18
-	+	60	66
-	+	127	53
-	+	147	0
-	+	126	81
-	+	138	34
-	+	137	18
-	+	148	0
-	+	145	0
-	+	148	0
-	+	145	0
-	+	146	0
-	+	145	0
-	+	32	0
-	+	112	6
-	+	32	6
-	+	105	2
-	+	106	9
-	+	107	1
-	+	108	23
-	+	109	1
-	+	110	10
-	+	111	2
-	+	106	43
-	+	108	44
-	+	112	32
-	+	32	32
-	+	126	72
-	+	110	0
-	+	126	63
-	+	41	0
-	+	110	0
-	+	51	27
-	+	52	9
-	+	53	65
-	+	55	11
-	+	60	11
-	+	53	61
-	+	56	9
-	+	58	0
-	+	60	0
-	+	57	0
-	+	58	0
-	+	59	0
-	d	106	1
-
-> ~/WORKSPACE/DRAMErrorInjector/BaseHelperLib.h
-	"	22	28
-	^	22	54
-	.	22	28
-	+	22	27
-	+	24	63
-	+	23	67
-	+	24	55
-	+	22	28
-
-> ~/WORKSPACE/DRAMErrorInjector/DFRegOpsIfc.c
-	"	271	2
-	^	334	13
-	.	334	12
-	+	58	100
-	+	59	16
-	+	40	51
-	+	35	10
-	+	47	8
-	+	50	57
-	+	51	29
-	+	55	61
-	+	58	66
-	+	59	29
-	+	96	92
-	+	97	28
-	+	58	0
-	+	118	54
-	+	128	8
-	+	131	57
-	+	132	29
-	+	187	5
-	+	276	10
-	+	282	18
-	+	287	25
-	+	321	10
-	+	327	18
-	+	334	12
-
-> /etc/environment
-	"	3	24
-	^	3	25
-	.	3	24
-	+	3	24
-
-> /etc/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-
-> /etc/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-
-> ~/zsh-syntax-highlighting/INSTALL.md
-	"	115	0
-
-> ~/zsh-syntax-highlighting/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/zsh-syntax-highlighting/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-
-> ~/zsh-syntax-highlighting/README.md
-	"	59	0
+	+	13	22
+	+	7	0
+	+	7	0
+	+	7	0
+	+	22	12
+	+	5	39
+	+	7	0
+	+	13	1
+	+	14	31
+	+	16	5
+	+	20	11
+	+	14	8
+	+	17	5
 
 > ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.c
-	"	178	47
-	.	189	0
-	+	117	0
-	+	47	55
-	+	194	0
-	+	126	0
-	+	153	0
-	+	152	0
-	+	46	0
-	+	116	0
-	+	115	0
-	+	115	0
-	+	189	43
-	+	189	0
-	+	189	0
-
-> ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.c
-	"	204	15
-	^	194	30
-	.	194	29
-	+	180	15
-	+	161	13
-	+	161	9
-	+	161	0
-	+	161	0
-	+	161	0
-	+	161	47
-	+	161	31
-	+	161	23
-	+	161	57
-	+	161	11
-	+	161	15
-	+	161	22
-	+	161	27
-	+	161	29
-	+	161	25
-	+	161	17
-	+	161	43
-	+	153	9
-	+	161	0
-	+	161	0
-	+	160	0
-	+	161	0
-	+	161	0
-	+	161	25
-	+	161	26
-	+	161	73
-	+	161	0
-	+	161	12
-	+	161	4
-	+	161	5
-	+	162	13
-	+	163	9
-	+	178	0
-	+	161	0
-	+	165	0
-	+	178	0
-	+	162	0
-	+	151	0
-	+	154	11
-	+	155	0
-	+	159	0
-	+	151	39
-	+	165	4
-	+	157	0
-	+	164	12
-	+	151	4
-	+	151	5
-	+	151	0
-	+	180	0
-	+	55	21
-	+	60	16
-	+	180	0
-	+	165	4
-	+	157	0
-	+	165	4
-	+	151	0
-	+	180	0
-	+	179	0
-	+	180	0
-	+	165	4
-	+	157	0
-	+	156	4
-	+	158	5
-	+	253	38
-	+	248	59
-	+	249	48
-	+	248	85
-	+	249	62
-	+	248	44
-	+	249	44
-	+	261	66
-	+	273	27
-	+	274	0
-	+	273	38
-	+	238	29
-	+	239	26
-	+	240	28
-	+	238	38
-	+	239	38
-	+	240	38
-	+	238	97
-	+	239	69
-	+	236	28
-	+	55	0
-	+	156	4
-	+	165	4
-	+	180	0
-	+	200	39
-	+	183	36
-	+	196	9
-	+	197	8
-	+	187	32
-	+	197	0
-	+	186	20
-	+	203	16
-	+	186	33
-	+	203	46
-	+	186	43
-	+	194	29
-
-> ~/WORKSPACE/DRAMErrorInjector/EccErrHelperLib.c
-	"	24	0
-
-> ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.h
-	"	130	0
-	^	134	43
-	.	134	42
-	+	50	0
-	+	130	25
-	+	128	0
+	"	237	8
+	^	194	58
+	.	237	18
+	+	200	0
+	+	205	0
+	+	202	0
+	+	205	0
+	+	210	0
+	+	207	0
+	+	210	0
+	+	214	0
+	+	212	0
+	+	214	0
+	+	218	0
+	+	216	0
+	+	218	0
+	+	222	0
+	+	220	0
+	+	230	0
+	+	224	0
+	+	222	0
+	+	230	0
+	+	230	0
+	+	226	11
+	+	230	0
+	+	227	9
+	+	229	0
+	+	230	0
+	+	228	0
+	+	229	0
+	+	230	0
+	+	81	0
+	+	81	0
+	+	87	4
+	+	87	0
+	+	87	13
+	+	94	8
+	+	87	58
+	+	94	0
+	+	94	0
+	+	89	24
+	+	89	51
+	+	94	0
+	+	90	25
+	+	87	47
+	+	89	41
+	+	87	0
+	+	90	31
+	+	91	9
+	+	92	0
+	+	90	56
+	+	92	38
+	+	94	0
+	+	98	0
+	+	89	0
+	+	79	14
+	+	95	29
+	+	92	37
+	+	98	15
+	+	242	19
+	+	36	77
+	+	90	42
+	+	98	0
+	+	81	0
+	+	82	0
+	+	87	0
+	+	80	0
+	+	82	0
+	+	87	0
+	+	86	46
+	+	96	0
+	+	98	0
+	+	98	0
 	+	130	0
-	+	132	55
-	+	110	0
-	+	134	42
+	+	33	0
+	+	34	77
+	+	35	77
+	+	34	77
+	+	42	77
+	+	96	30
+	+	95	27
+	+	96	0
+	+	81	26
+	+	80	41
+	+	83	11
+	+	80	48
+	+	83	12
+	+	81	27
+	+	84	14
+	+	83	12
+	+	84	13
+	+	85	0
+	+	97	33
+	+	232	50
+	+	96	0
+	+	54	77
+	+	42	77
+	+	46	77
+	+	80	0
+	+	63	77
+	+	192	44
+	+	194	57
+	+	237	18
 
-> ~/WORKSPACE/DRAMErrorInjector/EccErrInj.h
-	"	45	34
-	^	44	47
-	.	44	46
-	+	42	0
-	+	44	46
+> ~/WORKSPACE/DRAMErrorInjector/ReqestHandler.h
+	"	24	18
+	^	24	19
+	.	24	18
+	+	25	23
+	+	24	18
 
-> ~/WORKSPACE/DRAMErrorInjector/.gitignore
-	"	2	3
-	^	3	4
-	.	3	3
-	+	3	3
+> ~/zaza/msr.c
+	"	52	3
+	^	68	19
+	.	68	18
+	+	47	29
+	+	66	0
+	+	62	2
+	+	63	23
+	+	68	18
 
-> ~/WORKSPACE/DRAMErrorInjector/.git-credentials
-	"	1	0
-	^	1	0
-
-> ~/WORKSPACE/DRAMErrorInjector/.git/MERGE_MSG
-	"	8	20
-	^	8	21
-	.	8	20
-	+	8	20
-
-> ~/WORKSPACE/DRAMErrorInjector/.git/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/WORKSPACE/DRAMErrorInjector/.git/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-
-> ~/WORKSPACE/DRAMErrorInjector/DhyanaSocConf.c
-	"	139	0
-	^	99	45
-	.	99	44
-	+	84	33
-	+	86	57
-	+	88	20
-	+	84	0
-	+	88	0
-	+	99	44
-
-> ~/WORKSPACE/DRAMErrorInjector/Makefile
-	"	7	17
-	^	7	17
-	.	7	17
-	+	12	14
-	+	7	17
-
-> ~/WORKSPACE/DRAMErrorInjector/make
-	"	1	0
-
-> /etc/network/interfaces
-	"	1	0
-
-> /etc/network/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-
-> /etc/network/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-
-> ~/NERD_tree_3
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> /usr/bin/vncserver
-	"	45	21
-	^	45	22
-	.	45	21
-	+	46	0
-	+	44	0
-	+	46	21
-	+	194	0
-	+	45	0
-	+	44	0
-	+	45	21
-
-> /usr/bin/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> /usr/bin/__Tag_List__
-	"	3	0
-	.	23	0
-	+	45	0
-	+	23	0
-
-> /usr/bin/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/.vnc/xstartup
-	"	19	38
-	^	19	39
-	.	19	38
-	+	19	0
-	+	18	0
-	+	19	38
-
-> ~/.vnc/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/.vnc/__Tag_List__
-	"	3	0
-	.	4	0
-	+	4	0
-
-> ~/.vnc/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-
-> ~/WORKSPACE/DRAMErrorInjector/UMCRegOpsIfc.c
-	"	108	4
-	.	115	0
-	+	109	46
-	+	110	22
-	+	102	74
-	+	115	0
-
-> ~/WORKSPACE/DRAMErrorInjector/HigonDebug.h
-	"	30	52
-	.	40	36
-	+	40	36
-
-> ~/WORKSPACE/DRAMErrorInjector/NERD_tree_3
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.h
-	"	29	0
-	^	57	13
-	.	57	12
-	+	63	0
-	+	64	11
-	+	65	0
-	+	65	0
-	+	62	0
-	+	48	10
-	+	48	12
-	+	49	12
-	+	57	12
-
-> ~/WORKSPACE/DRAMErrorInjector/EccErrHelperLib.h
-	"	28	8
-	.	23	36
-	+	23	36
-
-> ~/WORKSPACE/DRAMErrorInjector/MCARegDef.h
-	"	32	0
-
-> ~/WORKSPACE/DRAMErrorInjector/MCARegOpsIfc.c
-	"	64	0
-
-> ~/WORKSPACE/DRAMErrorInjector/TransSysAddrToDramChip.c
-	"	642	0
-	^	631	19
-	.	631	18
-	+	487	83
-	+	489	18
-	+	490	0
-	+	484	31
-	+	277	0
-	+	262	0
-	+	277	0
-	+	262	0
-	+	271	54
-	+	271	75
-	+	423	13
-	+	422	33
-	+	456	0
-	+	478	0
-	+	259	64
-	+	42	33
-	+	293	46
-	+	609	24
-	+	632	56
-	+	362	4
-	+	362	5
-	+	412	0
-	+	411	0
-	+	363	11
-	+	365	11
-	+	363	4
-	+	411	5
-	+	362	0
-	+	304	0
-	+	409	0
-	+	366	12
-	+	408	0
-	+	366	0
-	+	371	0
-	+	366	0
-	+	396	12
-	+	402	0
-	+	397	0
-	+	403	0
-	+	371	54
-	+	389	0
-	+	392	0
-	+	397	0
-	+	372	0
-	+	376	0
-	+	372	60
-	+	399	0
-	+	366	0
-	+	373	12
-	+	375	56
-	+	373	0
-	+	375	0
-	+	362	4
-	+	365	53
-	+	306	11
-	+	309	12
-	+	364	22
-	+	367	0
-	+	375	0
-	+	368	53
-	+	369	50
-	+	370	55
-	+	375	0
-	+	297	39
-	+	298	0
-	+	298	51
-	+	299	0
-	+	300	68
-	+	301	0
-	+	300	0
-	+	366	0
-	+	377	0
-	+	378	0
-	+	366	0
-	+	362	0
-	+	363	0
-	+	411	0
-	+	410	0
-	+	298	0
-	+	299	0
-	+	302	28
-	+	301	0
-	+	303	23
-	+	307	0
-	+	305	0
-	+	364	87
-	+	524	0
-	+	522	0
-	+	523	31
-	+	631	35
-	+	619	31
-	+	626	4
-	+	629	39
-	+	606	72
-	+	620	49
-	+	629	37
-	+	632	36
-	+	611	11
-	+	615	19
-	+	631	18
-
-> ~/WORKSPACE/DRAMErrorInjector/TransDramAddrHelperLib.h
-	"	65	0
-	^	160	42
-	.	160	41
-	+	38	0
-	+	40	42
-	+	41	42
-	+	39	34
-	+	41	27
-	+	41	0
-	+	43	0
-	+	42	0
-	+	41	33
-	+	39	34
-	+	40	38
-	+	36	0
-	+	37	23
-	+	39	35
-	+	41	35
-	+	37	7
-	+	160	34
-	+	161	0
-	+	161	105
-	+	91	10
-	+	118	17
-	+	72	17
-	+	76	0
-	+	72	12
-	+	73	0
-	+	77	0
-	+	74	0
-	+	75	23
-	+	73	25
-	+	70	0
-	+	72	0
-	+	70	24
-	+	72	0
-	+	71	4
-	+	161	41
-	+	160	41
-
-> ~/WORKSPACE/DRAMErrorInjector/UMCRegOpsIfc.h
-	"	33	0
-
-> ~/mca_test.log
-	"	1	0
-
-> ~/eccmca.log
-	"	1	0
-
-> ~/eccinjec.log
-	"	61	0
-
-> ~/WORKSPACE/DRAMErrorInjector/eccinjec.log
-	"	1	0
-
-> ~/log.txt
-	"	3	24
-
-> /var/log/messages
-	"	8587	4
-
-> /var/log/NERD_tree_2
+> ~/zaza/NERD_tree_2
 	"	4	0
 	.	1	0
 	+	1	0
 	+	1	0
 	+	1	0
 	+	1	0
-	+	1	0
 
-> /var/log/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/WORKSPACE/DRAMErrorInjector/BaseHelperLib.c
-	"	1	0
-
-> ~/WORKSPACE/DRAMErrorInjector/MSRRegOpsIfc.c
-	"	162	4
-
-> ~/WORKSPACE/DRAMErrorInjector/__Tagbar__.1
+> ~/zaza/__Tag_List__
 	"	9	4
 	.	10	0
-	+	10	0
+	+	28	0
+	+	22	0
+	+	16	0
 	+	10	0
 
-> ~/.bashrc
-	"	26	0
+> ~/zaza/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
 
-> ~/test.c
-	"	13	13
-	^	12	15
-	.	12	14
+> ~/WORKSPACE/DRAMErrorInjector/APICRegOpsIfc.c
+	"	147	0
+
+> ~/WORKSPACE/DRAMErrorInjector/PreInjHandle.h
+	"	63	17
+	^	63	16
+	.	63	15
+	+	35	0
+	+	28	0
+	+	35	0
+	+	30	0
+	+	35	0
+	+	32	0
+	+	35	0
+	+	33	0
+	+	35	0
+	+	35	0
+	+	34	0
+	+	43	0
+	+	35	0
+	+	44	0
+	+	45	0
+	+	35	0
+	+	47	0
+	+	49	0
+	+	38	0
+	+	47	0
+	+	48	0
+	+	35	0
+	+	46	0
+	+	35	0
+	+	50	0
+	+	51	0
+	+	56	0
+	+	55	0
+	+	35	0
+	+	65	0
+	+	60	0
+	+	35	0
+	+	61	0
+	+	64	0
+	+	35	0
+	+	63	0
+	+	63	15
+
+> ~/WORKSPACE/DRAMErrorInjector/EccErrHelperLib.c
+	"	40	0
+
+> ~/WORKSPACE/DRAMErrorInjector/EccErrHelperLib.h
+	"	62	0
+
+> ~/zaza/test.c
+	"	10	0
+	^	20	13
+	.	20	12
+	+	3	20
+	+	2	17
 	+	15	0
+	+	14	24
 	+	9	0
+	+	7	3
+	+	8	3
+	+	12	3
+	+	21	3
+	+	26	3
+	+	27	0
+	+	33	26
+	+	32	0
+	+	10	33
+	+	11	0
+	+	17	4
+	+	18	30
+	+	21	0
+	+	20	12
+
+> ~/WORKSPACE/DRAMErrorInjector/MSRRegOpsIfc.c
+	"	118	4
+
+> ~/WORKSPACE/DRAMErrorInjector/EccErrAnls.h
+	"	25	0
+
+> ~/WORKSPACE/DRAMErrorInjector/UMCRegOpsIfc.c
+	"	112	9
+
+> ~/WORKSPACE/DRAMErrorInjector/HigonDebug.h
+	"	33	26
+	^	33	23
+	.	33	14
+	+	34	0
+	+	33	14
+
+> ~/WORKSPACE/CpuTestDataReorganizer/data_reorganize.py
+	"	51	0
+
+> ~/WORKSPACE/CpuTestDataReorganizer/NERD_tree_2
+	"	13	0
+	.	1	0
+	+	1	0
+
+> ~/WORKSPACE/CpuTestDataReorganizer/__Tag_List__
+	"	7	4
+	.	9	0
 	+	10	0
-	+	12	14
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	9	0
 
-> ~/.vim/bundle/vim-colors-solarized/colors/NERD_tree_3
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/bundle/vim-colors-solarized/colors/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-
-> ~/RASfeature/mcainfo
-	"	1	0
-
-> ~/RASfeature/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/RASfeature/-MiniBufExplorer-
-	"	1	0
+> ~/WORKSPACE/CpuTestDataReorganizer/-MiniBufExplorer-
+	"	1	82
 	.	2	0
 	+	2	0
 	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
 
-> ~/WORKSPACE/DRAMErrorInjector/APICRegOpsIfc.h
-	"	1	0
-	^	33	17
-	.	33	16
-	+	57	0
-	+	33	16
+> ~/WORKSPACE/CpuTestDataReorganizer/experiment_data_proccess.py
+	"	59	0
+	^	25	0
+	.	25	0
+	+	29	0
+	+	32	11
+	+	29	0
+	+	32	0
+	+	37	0
+	+	35	0
+	+	31	19
+	+	37	8
+	+	29	0
+	+	36	0
+	+	29	0
+	+	22	0
+	+	25	0
 
-> ~/WORKSPACE/DRAMErrorInjector/DFRegOpsIfc.h
-	"	214	0
+> ~/WORKSPACE/CpuTestDataReorganizer/avfs_cbd_data_proccess.py
+	"	167	4
+
+> ~/WORKSPACE/CpuTestDataReorganizer/avfs_data_proccess.py
+	"	19	0
